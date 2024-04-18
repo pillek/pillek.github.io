@@ -8,24 +8,24 @@ nav_order: 0
 >
 > You may delete this `attention` box.
 
-# [Project Name]
+# [Team Mustache ]
 
-[Project description]
+[Wir möchten eine Flask Webapp bereitstellen]
 
 ## Team members
 
-### [Jane Dane]
+### [Philipp Tizian Kreis]
 
 About
-: Some info about Jane
+: Some info about
 
 Matr.-Nr.
-: 1234567
+: 77211868319
 
-### [Joe Doe]
+### [Raslan Ebuheit]
 
 About
-: Some info about Joe
+: Some info about 
 
 Matr.-Nr.
 : 1234567
