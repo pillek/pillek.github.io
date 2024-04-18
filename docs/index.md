@@ -3,29 +3,24 @@ title: Home
 nav_order: 0
 ---
 
-{: .attention }
-> Any text enclosed by `[ ]` are placeholders, including the opening and closing brackets.
->
-> You may delete this `attention` box.
 
-# [Team Mustache ]
 
-[Wir möchten eine Flask Webapp bereitstellen]
+# Team Mustache 
+
+>Männer stilvoll einkleiden und dabei den Einkauf so einfach wie möglich gestalten. Entdecke die neuesten Trends und finde deinen individuellen Look – alles auf einer Website!
 
 ## Team members
 
-### [Philipp Tizian Kreis]
+### Philipp Tizian Kreis
 
-About
-: Some info about
+>About : 
 
 Matr.-Nr.
 : 77211868319
 
-### [Raslan Ebuheit]
+### Raslan Ebuheit
 
-About
-: Some info about 
+>About : 
 
 Matr.-Nr.
 : 1234567
