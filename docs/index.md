@@ -7,6 +7,10 @@ nav_order: 0
 
 # Team Mustache 
 
+![Abbildung - Logo ](../assets/images/mustache_logo.jpg)[Abbildung 1 - Logo der Firma]
+
+
+
 >Männer stilvoll einkleiden und dabei den Einkauf so einfach wie möglich gestalten. Entdecke die neuesten Trends und finde deinen individuellen Look – alles auf einer Website!
 
 ## Team members
