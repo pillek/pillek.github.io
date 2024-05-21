@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Dienstleister Formular</h1>
+
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="preferences">Vorlieben:</label><br>
+    <textarea id="preferences" name="preferences"></textarea><br>
+    <label for="biography">Biographie:</label><br>
+    <textarea id="biography" name="biography"></textarea><br>
+    <input type="submit" value="Absenden">
+</form>
+
+{% endblock %}
