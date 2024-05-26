@@ -17,16 +17,17 @@ nav_order: 4
 {: toc }
 </details>
 
-## [Jane Dane]
+## [Philipp Kreis]
 
 Contributions
-: Lorem ipsum dolor
-: Consetetur sadipscing elitr
-: ...
+: Login.html
+: app.py
+: dashboard.html
 
-## [Joe Doe]
+## [Raslan]
 
 Contributions
-: Diam nonumy eirmod
-: Tempor invidunt ut labore
-: ...
+: index.html
+: overview.html
+: app.py
+: DB
