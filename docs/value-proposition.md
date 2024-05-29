@@ -18,16 +18,21 @@ nav_order: 1
 
 ## The problem
 
-[Describe which problem your application tackles and why it is relevant.]
+Die Web - Applikation dient als Marketplatz für modebewusste Menschen, die ihre Persönlichkeit mit neusten Styles zum Ausdruck bringen wollen. Unsere Kunden haben das Problem, dass keine oder wenige Anbieter haben, die ihnen diese Möglichkeit zur Verfügung stellen. Sei es, weil die vorhandenen Anbieter zu teuer sind oder die Kommunikation zu lange dauert bis tatsächlich eine Beratung stattfindet. 
 
 ## Our solution
 
-[Describe why and how your app solves the stated problem. Don't over-promise: the description should match what your app actually delivers.]
+Unser Produkt "Mustache" hat einen userfreundlichen Ansatz, indem der User mit wenigen Klicks einen Kontakt zu unseren Beratern herstellen kann. Dabei müssen sich unsere User nicht mal anmelden und können über die hinterlegte E-Mail Adresse ohne einem Passwort auf unseren Servern mit den Berater schreiben. Dadurch soll der kognitive Aufwand einer Registrierung zur Konkurrenz deutlich erleichert werden.
+
+Zudem können die User mit einer ansprechenden User Experience die wichtigsten Details über die Berater sofort sehen. Sei es, die angegeben Referenzen Berater in der Modekategorie, wie Casual, Business etc... Als auch die Preise der Servicepakete, die die Berater ersichtlich veröffentlichen. 
+
+Unsere Kunden haben ebenfalls die Sorgen, dass die Kaufabwicklung und die zu fordernde Dienstleistung eventuell nicht erfüllt wird. Daher sind all unsere Berater durch eine ID - Abfrage verifiziert und können sich nur registrieren, wenn sie eine gültige Steuer - ID hinterlassen. 
 
 ## Target user
 
-[Scope your target user(s), e.g., with the help of personas.]
+Unsere Target User sind Kunden, die eine Fashion - Beratung suchen oder Consultants, die nebenbei Geld verdienen möchten. Unser Produkt stehen allen Usern ab 18 Jahren zur Verfügung und ist geschlechtsunabhängig. 
 
 ## Customer journey
 
-[Illustrate the customer journey, from the app's entry point to a completed task. You might want to show the customer journey as (schematic) screen flows.]
+Erfolgt, sobald die Journey konzeptionell abgeschlossen ist.
+
