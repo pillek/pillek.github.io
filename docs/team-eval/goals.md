@@ -1,5 +1,5 @@
 ---
-title: Goals
+title: Index - Homepage
 parent: Team Evaluation
 nav_order: 1
 ---
@@ -8,7 +8,7 @@ nav_order: 1
 [Jane Dane]
 
 {: .no_toc }
-# Goals achieved and missed
+# Goals achieved
 
 <details open markdown="block">
 {: .text-delta }
