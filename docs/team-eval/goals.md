@@ -11,7 +11,8 @@ nav_order: 1
 # Goals achieved
 
 <details open markdown="block">
-{: .text-delta }
+xxxxxxxxxxxxx
 <summary>Table of contents</summary>
-xxxxxxxxxxxxxxxxxx
++ ToC
+{: toc }
 </details>
