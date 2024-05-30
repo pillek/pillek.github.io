@@ -17,5 +17,6 @@ nav_order: 2
 {: toc }
 </details>
 
-![Mind Map - Frame 6](https://github.com/pillek/pillek.github.io/assets/79250448/08f42787-2bc1-4482-af1f-3df9f92788aa)
+![Mind Map - Frame 6 (1)](https://github.com/pillek/pillek.github.io/assets/79250448/f93a10e8-6eda-44ae-a7eb-37ca737fb645)
+
 
