@@ -1,13 +1,30 @@
 <!doctype html>
 <html>
+    <link href="style.css" rel="stylesheet">
     <head>
       <title>Mustache Fashion Platform</title>
+
     </head>
     <body>
-        <div><a href="/index">Home</a>
+        <div class="header"><a href="/index">Home</a>
         <a href="/login">Login</a>
         <a href="/dashboard">Dashboard</a></div>
-        
+
+        <div class="main-banner">
+        <img src="https://source.unsplash.com/1600x900/?fashion" alt="Mode Banner">
+    </div>
+
+     <div class="content">
+        <h2 style="text-align: center; font-weight: bold;">Was macht Mustache?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus. Maecenas id magna sit amet nisi consectetur cursus. Nulla facilisi. Duis sollicitudin, tortor nec pellentesque dignissim, odio orci feugiat eros, ac fringilla dolor lorem sed leo. Aliquam erat volutpat.</p>
+    </div>
+
+    <div class="footer">
+        <p>Impressum</p>
+        <p>Wer ist Mustache</p>
+        <p>© By Mustache</p>
+    </div>
+
         {% block content %}{% endblock %}
     </body>
 </html>

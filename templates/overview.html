@@ -1,7 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<div class="advisors">
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
+            <h3>Berater 1</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <button>Kontakt</button>
+        </div>
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='staticimages/consultant2.jpeg') }}" alt="Advisor 2">
+            <h3>Berater 2</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <button>Kontakt</button>
+        </div>
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
+            <h3>Berater 3</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <button>Kontakt</button>
+        </div>
+    </div>
 
 
 {% endblock %}
