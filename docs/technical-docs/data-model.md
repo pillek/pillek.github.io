@@ -17,4 +17,5 @@ nav_order: 2
 {: toc }
 </details>
 
-[Visualize and describe the data model(s) of your application. This description should match the actual implementation.]
+![Mind Map - Frame 6](https://github.com/pillek/pillek.github.io/assets/79250448/08f42787-2bc1-4482-af1f-3df9f92788aa)
+
