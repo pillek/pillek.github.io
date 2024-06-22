@@ -17,12 +17,12 @@ def overview():
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
-    if request.method == 'POST':
-        name = request.form.get('name')
-        preferences = request.form.get('preferences')
-        biography = request.form.get('biography')
-        return 'Erfolgreich abgesendet!'
-    return render_template('dashboard.html')
+    # if request.method == 'POST':
+    #     name = request.form.get('name')
+    #     preferences = request.form.get('preferences')
+    #     biography = request.form.get('biography')
+    #     return 'Erfolgreich abgesendet!'
+     return render_template('dashboard.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
