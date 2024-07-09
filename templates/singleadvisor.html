@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisor Detailseite</title>
+    <link rel="stylesheet" href="css/singleadvisor.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/index">Home</a>
+        <a href="/login">Login</a>
+        <a href="/registration">Register</a>
+    </div>
+
+    <div class="main-content">
+        <div class="advisor-image">
+            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor Image">
+        </div>
+        <div class="advisor-info">
+            <div class="section">
+                <div class="section-title about-me">Über mich</div>
+                 <div class="section-content">
+                <p>Du möchtest mit deine Persönlichkeit mit dem gewissen Style ausdrücken? Dann buche mich als deinen persönlichen Styling Berater! Ich begleite schon seit 5 Jahren die bekanntesten Fashion Influencer aus Instagram und mache auch deinen Style Likebale. Just Call Me!</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Meine Stylings</div>
+                <div class="photos">
+                    <img src="{{ url_for('static', filename='images/men1.jpg') }}" alt="Style 1">
+                    <img src="{{ url_for('static', filename='images/men2.jpg') }}" alt="Style 2">
+                    <img src="{{ url_for('static', filename='images/men3.jpg') }}" alt="Style 3">
+                    <img src="{{ url_for('static', filename='images/men4.jpg') }}" alt="Style 4">
+                    <img src="{{ url_for('static', filename='images/men5.jpg') }}" alt="Style 5">
+                    <img src="{{ url_for('static', filename='images/men6.jpg') }}" alt="Style 6">
+                </div>
+            </div>
+            <div class="section services">
+                <div class="section-title">Meine Services</div>
+                <div class="service-package">
+                    <h3>Service Paket 1 <span>50€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
+                    <div class="button-container">
+                        <button><a href="payment.html">Gleich Buchen</a></button>
+                    </div>
+                </div>
+                <div class="service-package">
+                    <h3>Service Paket 2 <span>75€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
+                        <div class="button-container">
+                            <button><a href="payment.html">Gleich Buchen</a></button>
+                        </div>
+                </div>
+                <div class="service-package">
+                    <h3>Service Paket 3 <span>120€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
+                    <div class="button-container">
+                        <button><a href="payment.html">Gleich Buchen</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="advisor-button">
+                <button>Fragen an den Berater?</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
