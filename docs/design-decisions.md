@@ -93,3 +93,35 @@ We regarded two alternative options:
 | **Switch DB engine** | ❌ Different SQL dialect | ✔️ Abstracts away DB engine |
 
 ---
+
+## 01: [Kein User Login nötig - Raslan]
+
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Unsere Applikation soll bei der User Journey keine Login Funktionalität für den User zur Verfügung stellen. Damit wollen wir 2 Effekte erzielen: A. Wir sparen uns die Zeit und können die vorhandenenen Ressourcen in die Entwicklung anderer Funktionalitäten stecken B. Wir geben unserem Produkt ein cooles Feature, aber auch dem User die Möglichkeit das Produkt ohne großen Aufwand auszuprobieren.  
+
+### Decision
+
+Daher haben wir uns in gemeinsamer Ansprache dazu entschieden eine ChatBox Funktionalität hinter jedem Berater - Profil zu hinterlegen, womit der User ganz einfach interagieren soll. Nach dem wir gemeinsam die Chatbox Funktionalität grob umfasst haben, ging es für mich in die eigentliche Entwicklung. 
+
+Ich wollte, dass der User, nachdem er auf den Kontakt - Button im Advisor Profil geklickt hat, ein neues Popup Fenster sieht, wo der User folgende Felder ausfüllen kann: Betreff, Email und das Nachrichtenfeld mit dem jeweiligen Inhalt. Sobald der User auf "Senden" klickt, soll die Nachricht auf die jeweilige Email - Adresse des Beraters gesendet werden.
+
+### Regarded options
+
+Um die ChatBox Funktionalität abzubilden gab es dazu 2 Optionen:
+
+A. JavaScript: Mit JS war es mir möglich gewesen die gewünschte Popup Funktionalität erfolgreich umzusetzen. Dazu musste zuerst eine Fetch - API von Flask im index.html eimgefügt werden, damti eine HTTP - Anfrage an einen Server gesendet werden kann. Nachdem diese dann stand, musste die Popup Funktionalität des Öffnens und des Schließens integriert werden.
+
+B. Python: Wird ein Standard Code verwendet um eine POST Anfrage an die hinterlegte Email Adresse zu senden.
+
+Zum jetzigen Stand der Entwicklung ist nur eine Email - Adresse für alle Berater verwendet. Das nächste Schritte wäre eventuell für jeden Berater eine individuelle POST - Anfrage zu machen. Je nach Stand der Entwicklung wird es versucht umzusetzen. 
+
+---
