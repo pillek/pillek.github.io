@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 import os 
 
-app = Flask(_name_)
+app = Flask(__name__)
 mail = Mail(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -73,6 +73,6 @@ def send_email():
 
 
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     db.create_all()  # Erstelle die Tabellen in der Datenbank
     app.run(debug=True)
