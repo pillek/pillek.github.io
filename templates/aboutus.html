@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/aboutus.css">
-</head>
-<body>
-        <div class="header">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="registration.html">Register</a>
-    </div>
+{% extends "base.html" %}
+
+{% block content %}
     
     <div class="container">
         <div class="about-section">
@@ -39,12 +28,5 @@
                 <img src="static/images/H&M.jpg" alt="Referenz 3 Logo">
             </div>
         </div>
-
-        <div class="footer">
-            <p>Impressum</p>
-            <p><a href="aboutus.html">Wer ist Mustache</a></p>
-            <p>© By Mustache</p>
-       </div>
     </div>
-</body>
-</html>
+{% endblock %}

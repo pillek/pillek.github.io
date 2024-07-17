@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Webseite</title>
-    <link rel="stylesheet" href="css/advisors.css">
-</head>
-<body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="registration.html">Register</a>
-    </div>
+{% extends "base.html" %}
+
+{% block content %}
     <div class="main-banner">
         <h1>Main Banner</h1>
     </div>
@@ -117,11 +106,6 @@
         </div>
     </div>
 
-    <div class="footer">
-        <p>Impressum</p>
-        <p><a href="aboutus.html">Wer ist Mustache</a></p>
-        <p>© By Mustache</p>
-    </div>
 
     <div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
         <h2>Nachricht senden</h2>
@@ -131,5 +115,4 @@
         <button onclick="sendMessage()">Senden</button>
     </div>
     <script src="{{ url_for('static', filename='images/JavaScript/scripts.js') }}"></script>
-</body>
-</html>
+{% endblock %}
