@@ -23,7 +23,7 @@ def singleadvisor():
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    return render_template('login.html', form = form)
 
 @app.route('/registration')
 def registration():
@@ -31,7 +31,7 @@ def registration():
         usermail = request.form.get('usermail')
         password = request.form.get('password')
 
-    return render_template('registration.html')
+    return render_template('registration.html', form = form)
 
 @app.route('/payment')
 def payment():
