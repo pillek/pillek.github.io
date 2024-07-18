@@ -21,13 +21,15 @@ def index():
 def singleadvisor():
     return render_template('singleadvisor.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
+    form = LoginForm()
     return render_template('login.html', form = form)
 
-@app.route('/registration')
+@app.route('/registration', methods=['GET', 'POST'])
 def registration():
     if request.method == 'POST':
+        form = RegistrationForm
         usermail = request.form.get('usermail')
         password = request.form.get('password')
 
