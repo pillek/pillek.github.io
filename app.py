@@ -1,12 +1,14 @@
 from flask import Flask, render_template, request,jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
+from forms import RegistrationForm, LoginForm
 import os 
 
 app = Flask(__name__)
 mail = Mail(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'dont-know'
 db = SQLAlchemy(app)
 
 from models import Login, Customer, Consultant, CustomerRequest, ConsultantResponse
@@ -22,6 +24,14 @@ def singleadvisor():
 @app.route('/login')
 def login():
     return render_template('login.html')
+
+@app.route('/registration')
+def registration():
+    if request.method == 'POST':
+        usermail = request.form.get('usermail')
+        password = request.form.get('password')
+
+    return render_template('registration.html')
 
 @app.route('/payment')
 def payment():
