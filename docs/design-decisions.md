@@ -125,3 +125,22 @@ B. Python: Wird ein Standard Code verwendet um eine POST Anfrage an die hinterle
 Zum jetzigen Stand der Entwicklung ist nur eine Email - Adresse für alle Berater verwendet. Das nächste Schritte wäre eventuell für jeden Berater eine individuelle POST - Anfrage zu machen. Je nach Stand der Entwicklung wird es versucht umzusetzen. 
 
 ---
+## Mail - API
+
+Status
+: Done
+
+Updated
+:22-07-2024
+
+
+### Problem Statement
+
+Wir haben zwar eine Chatbox Funktionalität für alle Advisor Profile erstellt, aber das Problem war, dass die Mails nicht, wie gewünscht, in der hinterlegten Mail - Adresse ankamen. Ich hab dann versucht die Vertrauenswürdigkeit der Website - Mails in den Google Einstellungen anzupassen und hatte dabei keinen Erfolg gehabt.
+
+### Decision
+
+Die hinterlegte Email -Adresse von tippitopp034@gmail.com ist ein Google Provider und die gesendeten Mails von der Webseite haben das Problem, dass sie nicht als vertrauenswürdig eingestuft werden. Daher musste ich mir überlegen, wie einen anderen Provider als Zwischenbrücke nutzen könnte, der die richtige Reputation besitzt, damit die Nachrichten von der Webseite ankommen. Dazu wurde die API von Mailjet in die Webseite integriert, um die Vertrauenswürdigkeit der Mails zu erhöhen.  
+
+Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär keine zusätzlichen Kosten verursacht. Da das Basisprodukt von Mailjet 6000 Mails pro Monat kostenlos verarbeiten kann, fiel die entsprechende Entscheidung auf den besagten Provider.
+
