@@ -144,3 +144,49 @@ Die hinterlegte Email -Adresse von tippitopp034@gmail.com ist ein Google Provide
 
 Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär keine zusätzlichen Kosten verursacht. Da das Basisprodukt von Mailjet 6000 Mails pro Monat kostenlos verarbeiten kann, fiel die entsprechende Entscheidung auf den besagten Provider.
 
+--
+
+02: [Transaktionsabwicklung - Raslan]
+
+Status
+: Done
+
+**Updated
+: 22-07-2024
+
+### Problem Statement
+
+Das Ziel ist es, einen 3-stufigen Zahlungsprozess für eine Mode-Website zu erstellen. Die Schritte sind: Bestelldetails,
+Zahlungsinformationen und Zahlungsbestätigung. Die Seite verarbeitet auch eine Anfrage, die den Payload zurück
+an das Flask-Backend sendet.
+
+### Decision
+
+Die Design-Entscheidung war, einen 3-stufigen Zahlungsprozess mit klarer Navigation und Validierung bei jedem Schritt zu implementieren.Die Idee ist, den Prozess einfach, aber dennoch „code-komplex“ genug zu gestalten, um eine echte Zahlungsanforderung zu demonstrieren.
+ 
+### Regarded options
+
+
+Option 1: Modal-basiertes Zahlungsformular
+Beschreibung: Ein modales Fenster, das über der aktuellen Seite erscheint und das Zahlungsformular enthält.
+
+Vorteile:
+Hält die Benutzer auf derselben Seite und reduziert die Komplexität der Navigation. Kann visuell ansprechend und modern sein.
+
+Nachteile:
+Begrenzter Platz für die Anzeige von Informationen, was möglicherweise prägnantere Formulare erfordert.
+Potenzielle Probleme mit der Reaktionsfähigkeit und Zugänglichkeit von Mobilgeräten.
+Komplexe Handhabung der Formularübermittlung und -validierung innerhalb eines Modals.
+
+Option 2: Einseitiges Zahlungsformular
+Beschreibung: Eine einzige Seite, die alle Felder für Bestelldetails, Zahlungsinformationen und Bestätigung enthält.
+
+Vorteile:
+Einfachheit in Design und Implementierung.
+Alle Informationen sind auf einen Blick sichtbar.
+
+Nachteile:
+Kann aufgrund der Menge an Informationen auf einer Seite für die Benutzer überwältigend sein.
+Höheres Risiko, dass Nutzer Felder übersehen oder falsch ausfüllen.
+Weniger geführte Erfahrung, was zu höheren Abbruchraten führen kann.
+
