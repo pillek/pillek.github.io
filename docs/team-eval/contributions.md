@@ -27,10 +27,16 @@ Contributions
 : app.py
 : dashboard.html
 
-## [Raslan]
+## [Raslan Ebuheit]
 
 Contributions
-: index.html
-: overview.html
+: User Journey besteht aus:
+: Index.html
+: Chatbox - Funktionalität
+: Advisor.html
+: Singleadvisor.html
+: advisors.json
+: dashboard.html
+: payment.html
+: aboutus.html
 : app.py
-: DB
