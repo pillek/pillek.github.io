@@ -1,14 +1,107 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="main-banner">
-        <h1>Main Banner</h1>
+
+<div class="container">
+    <div class="payment-steps">
+        <div class="step active" id="step1">Order Details</div>
+        <div class="step" id="step2">Payment Information</div>
+        <div class="step" id="step3">Confirm Payment</div>
     </div>
-    
-    <div class="full-screen-image">
-        <img src="static/images/under-construction.png" alt="Main Banner">
-        <h1>Main Banner</h1>
+
+    <div class="payment-content">
+        <div class="step-content" id="step1-content">
+            <h2>Order Details</h2>
+            <p>Service: Fashion Consultation</p>
+            <p>Price: €100</p>
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+
+        <div class="step-content" id="step2-content" style="display:none;">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Cardholder Name" required>
+                <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="button" onclick="nextStep(3)">Next</button>
+            </form>
+        </div>
+
+        <div class="step-content" id="step3-content" style="display:none;">
+            <h2>Confirm Payment</h2>
+            <p>Please review your order and payment details before confirming.</p>
+            <button onclick="confirmPayment()">Confirm Payment</button>
+        </div>
     </div>
+</div>
+
+<script>
+    let orderDetails = {
+        service: "Fashion Consultation",
+        price: 100
+    };
+
+    let paymentDetails = {};
+
+    function nextStep(step) {
+
+        document.querySelectorAll('.step-content').forEach(content => {
+            content.style.display = 'none';
+        });
+
+        document.getElementById(`step${step}-content`).style.display = 'block';
+
+        document.querySelectorAll('.step').forEach((stepElement, index) => {
+            if (index < step) {
+                stepElement.classList.add('active');
+            } else {
+                stepElement.classList.remove('active');
+            }
+        });
+
+        if (step === 2) {
+            // Capture order details (you can add more fields if needed)
+            orderDetails.service = document.querySelector('#step1-content p:nth-child(2)').textContent.split(': ')[1];
+            orderDetails.price = parseFloat(document.querySelector('#step1-content p:nth-child(3)').textContent.split('€')[1]);
+        }
+
+        if (step === 3) {
+            // Capture payment details
+            paymentDetails.cardNumber = document.querySelector('input[placeholder="Card Number"]').value;
+            paymentDetails.cardholderName = document.querySelector('input[placeholder="Cardholder Name"]').value;
+            paymentDetails.expiryDate = document.querySelector('input[placeholder="Expiry Date (MM/YY)"]').value;
+            paymentDetails.cvv = document.querySelector('input[placeholder="CVV"]').value;
+        }
+    }
+
+    function confirmPayment() {
+        // Combine order and payment details
+        let payload = {
+            order: orderDetails,
+            payment: paymentDetails
+        };
+
+        // Send data to Flask endpoint
+        fetch('/process_payment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Payment confirmed! Thank you for your purchase.');
+            window.location.href = '/index';
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('There was an error processing your payment. Please try again.');
+        });
+    }
+</script>
 
 
 {% endblock %}

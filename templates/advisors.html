@@ -1,118 +1,160 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="main-banner">
-        <h1>Main Banner</h1>
-    </div>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus. Maecenas id magna sit amet nisi consectetur cursus. Nulla facilisi. Duis sollicitudin, tortor nec pellentesque dignissim, odio orci feugiat eros, ac fringilla dolor lorem sed leo. Aliquam erat volutpat.</p>
-    </div>
+<div class="content">
+    <p>Entdecken Sie unsere erfahrenen Fashion-Berater, die Ihnen helfen, Ihren persönlichen Stil zu finden und zu perfektionieren.</p>
+</div>
 
-    <!-- Casual Section -->
-    <div class="section-title">
-        <h2>Casual</h2>
+<div class="filters-container">
+    <div class="filter">
+        <h3>Kategorie</h3>
+        <select id="categoryFilter">
+            <option value="">Alle Kategorien</option>
+        </select>
     </div>
-    <div class="advisors">
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
-            <h3>Berater 1</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
-            <h3>Berater 2</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
-            <h3>Berater 3</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
-            <h3>Berater 1</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
-            <h3>Berater 2</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
-            <h3>Berater 3</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
+    <div class="filter">
+        <h3>Standort</h3>
+        <select id="locationFilter">
+            <option value="">Alle Standorte</option>
+        </select>
     </div>
+    <div class="filter">
+        <h3>Service</h3>
+        <select id="serviceFilter">
+            <option value="">Alle Services</option>
+        </select>
+    </div>
+</div>
 
-    <!-- Street Wear Section -->
-    <div class="section-title">
-        <h2>Street Wear</h2>
-    </div>
-    <div class="advisors">
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
-            <h3>Berater 1</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
-            <h3>Berater 2</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
-            <h3>Berater 3</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
-            <h3>Berater 1</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
-            <h3>Berater 2</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-        <div class="advisor">
-            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
-            <h3>Berater 3</h3>
-            <p>Kurzbeschreibung des Beraters.</p>
-            <button><a href="/singleadvisor">Profil ansehen</a></button>
-            <button>Kontakt</button>
-        </div>
-    </div>
+<div id="advisors-container" class="advisors">
+    <!-- Advisors will be dynamically added here -->
+</div>
 
+<div class="footer">
+    <p>Impressum</p>
+    <p><a href="aboutus.html">Wer ist Mustache</a></p>
+    <p>© By Mustache</p>
+</div>
 
-    <div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
-        <h2>Nachricht senden</h2>
-        <input type="text" id="subject" placeholder="Betreff"></input><br/>
-        <input type="text" id="email" placeholder="Email"></input><br/>
-        <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br/>
-        <button onclick="sendMessage()">Senden</button>
-    </div>
-    <script src="{{ url_for('static', filename='images/JavaScript/scripts.js') }}"></script>
+<div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
+    <h2>Nachricht senden</h2>
+    <input type="text" id="subject" placeholder="Betreff"></input><br/>
+    <input type="text" id="email" placeholder="Email"></input><br/>
+    <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br/>
+    <button onclick="sendMessage()">Senden</button>
+</div>
+
+<script>
+    let advisorsData;
+
+    function createAdvisorCard(advisor) {
+        return `
+            <div class="advisor">
+                <img src="${advisor.image}" alt="${advisor.name}">
+                <h3>${advisor.name}</h3>
+                <p>${advisor.description}</p>
+                <p>Kategorie: ${advisor.category}</p>
+                <p>Standort: ${advisor.location}</p>
+                <p>Services: ${advisor.services.join(', ')}</p>
+                <button><a href="/singleadvisor?id=${advisor.id}">Profil ansehen</a></button>
+                <button onclick="showContactPopup(${advisor.id})">Kontakt</button>
+            </div>
+        `;
+    }
+
+    function loadAdvisors() {
+        fetch('static/json/advisors.json')
+            .then(response => response.json())
+            .then(data => {
+                advisorsData = data;
+                populateFilters(data);
+                displayAdvisors(data.advisors);
+            })
+            .catch(error => console.error('Error loading advisors:', error));
+    }
+
+    function populateFilters(data) {
+        const categoryFilter = document.getElementById('categoryFilter');
+        const locationFilter = document.getElementById('locationFilter');
+        const serviceFilter = document.getElementById('serviceFilter');
+
+        data.categories.forEach(category => {
+            categoryFilter.innerHTML += `<option value="${category}">${category}</option>`;
+        });
+
+        data.locations.forEach(location => {
+            locationFilter.innerHTML += `<option value="${location}">${location}</option>`;
+        });
+
+        data.services.forEach(service => {
+            serviceFilter.innerHTML += `<option value="${service}">${service}</option>`;
+        });
+
+        // Add event listeners to filters
+        categoryFilter.addEventListener('change', filterAdvisors);
+        locationFilter.addEventListener('change', filterAdvisors);
+        serviceFilter.addEventListener('change', filterAdvisors);
+    }
+
+    function filterAdvisors() {
+        const category = document.getElementById('categoryFilter').value;
+        const location = document.getElementById('locationFilter').value;
+        const service = document.getElementById('serviceFilter').value;
+
+        const filteredAdvisors = advisorsData.advisors.filter(advisor => {
+            return (!category || advisor.category === category) &&
+                   (!location || advisor.location === location) &&
+                   (!service || advisor.services.includes(service));
+        });
+
+        displayAdvisors(filteredAdvisors);
+    }
+
+    function displayAdvisors(advisors) {
+        const container = document.getElementById('advisors-container');
+        container.innerHTML = advisors.map(createAdvisorCard).join('');
+    }
+
+    function showContactPopup(advisorId) {
+        // You can use the advisorId to pre-fill the contact form if needed
+        document.getElementById('contactPopup').style.display = 'block';
+    }
+
+    // Funktion für das Senden der Nachricht
+    function sendMessage() {
+        try {
+            // Get the values from the input fields
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Log the values to the console (for debugging)
+            console.log('Email:', email);
+            console.log('Subject:', subject);
+            console.log('Message:', message);
+
+            fetch('/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, subject, message })
+            }).then(response => response.json()).then(data => {
+                console.log('Success:', data);
+            }).catch((error) => {
+                console.error('Error:', error);
+            });
+
+            // Close the popup and show success alert
+            document.getElementById('contactPopup').style.display = 'none';
+            alert("Nachricht gesendet!");
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+    }
+
+    // Load advisors when the page is ready
+    document.addEventListener('DOMContentLoaded', loadAdvisors);
+</script>
+<script src="{{ url_for('static', filename='images/JavaScript/scripts.js') }}"></script>
 {% endblock %}
