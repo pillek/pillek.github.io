@@ -94,7 +94,169 @@ We regarded two alternative options:
 
 ---
 
-## 01: [Kein User Login nötig - Raslan]
+## 01: Wie soll der User Journey sein, bzw. was bräuchten wir minimal?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Unsere Anwendung soll einen kleinen und funktionalen User Journey bieten, die es den Nutzern ermöglicht, ihre Ziele schnell zu erreichen. Wir müssen entscheiden, wie dieser Journey aussehen soll und welche minimalen Schritte erforderlich sind.
+
+### Decision
+
+-> Homepage
+	Button für “Berater ansehen”
+->Beraterübersicht (von allem) 
+	Mehrere Berater in Reihen mit Bildern
+	unter jedem Berater dessen Präferenzen
+	unter jedem Berater ein Button mit Kontakt
+-> ChatBox evtl. im gleichen Fenster (erstmal ohne Login)
+	User gibt Nachricht in die Eingabe ein, welche automatisch an Mail von Consultant versendet wird
+
+### Regarded options
+
+- Längerer User Journey: Eine umfassendere Erfahrung mit zusätzlichen Schritten (z. B. Login).
+Pro: Bietet umfassendere Funktionen.
+Con: Kann komplex sein und die Entwicklungszeit verlängern.
+- Minimaler User Journey: Eine reduzierte Version mit nur den grundlegenden Schritten.
+Pro: Einfach und schnell zu ein Produkt zu haben.
+Con: Begrenzte Funktionalität und möglicherweise weniger attraktiv für Benutzer.
+
+---
+
+## 02: Welchen Advisor Journey brauchen wir für den geforderten User Journey?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Unsere Aufgabe besteht darin, den passenden Advisor Journey für den geforderten User Journey zu definieren. Dabei müssen wir nun die signifikanten Anforderungen und den Kontext berücksichtigen.
+
+### Decision
+
+-> Registrierung auf Loginseite mit
+	E-Mail
+	Passwort
+	
+-> Dashboard von Consultant
+Name angeben
+Über mich
+Meine Stylings (Bilder)
+Meine Services
+	preferences angeben
+	biography angeben
+	(Bild angeben)
+	(der Consultant sieht seine Aufträge im Dashboard und kann alte dort löschen)
+
+-> Login vom Consultant auf Homepage in NavBar	
+
+### Regarded options
+
+Andere Möglichkeiten sich als Berater in seinem Dashboard zu beschreiben
+
+---
+
+## 03: Braucht der normale Kunde einen Login?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Uns hat sich die Frage gestellt, ob der normale Kunde einen Login benötigt. Hierbei müssen wir die Anforderungen des Kontakts zwischen Kunde und Berater berücksichtigen.
+
+### Decision
+
+Nach etwas Abwägung haben wir uns dafür entschieden, den Login des normalen Kunden wegzulassen und den Messenger nicht über unser System zu entwickeln. Deswegen werden wir ein einfaches Formularfeld implementieren, die die nötige Eingabe enthält und die komplette Kommunikation über E-Mail laufen lässt. JavaScript ermöglicht das Pop-up und das Versenden macht Python möglich.
+
+
+### Regarded options
+
+Gastzugang ohne Login:
+Pro: Einfache und schnelle Bestellabwicklung.
+Pro: Ermöglicht ein schnelleres minimales Softwareprodukt.
+Con: Begrenzter Komfort im Erlebnis des Kunden.
+
+Login erforderlich:
+Pro: Bietet ein besseres Erlebnis und ermöglicht die Speicherung von Kundendaten.
+Con: Kann Benutzer abschrecken, die keine zusätzlichen Konten erstellen möchten.
+Con: Erhöht den Aufwand für die Entwicklung.
+
+--- 
+
+## 04: Nehmen wir CSS oder nehmen wir Bootstrap?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Bei der Wahl der Formatierung für unser Webprojekt müssen wir die Vor- und Nachteile von CSS und Bootstrap abwägen. Hierbei geht es darum, die beste Lösung für unsere spezifischen Anforderungen zu finden.
+
+### Decision
+
+Wir haben uns erst einmal für CSS entschieden, wir dort von vornherein Wissen haben.
+
+### Regarded options
+
+CSS (Cascading Style Sheets):
+Pro: Schon vorhandenes Wissen.
+Con: Erfordert mehr Aufwand.
+Con: Keine vorgefertigten Komponenten.
+Bootstrap:
+Pro: Vorgefertigte Komponenten und Stile für schnellere Entwicklung.
+Pro: Responsives Design und gute Unterstützung für verschiedene Geräte.
+Con: Weniger Vorwissen.
+
+---
+
+## 05: Welche Anforderungen haben wir an die Datenbank und welche Datenbank passt dazu?
+
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: 09-07-2024
+
+### Problem statement
+
+Wir müssen alles vom Advisor (Login Daten, Profildaten, Bilder, Payment) von mehreren Advisorn speichern.
+
+### Decision
+
+Wir bauen eine SQLAlchemy Datenbank mit den Tabellen: User, Login,...
+
+### Regarded options
+
+[Describe any possible design decision that will solve the problem. Assess these options, e.g., via a simple pro/con list.]
+
+---
+
+## 06: [Kein User Login nötig - Raslan]
 
 ### Meta
 
@@ -110,7 +272,7 @@ Unsere Applikation soll bei der User Journey keine Login Funktionalität für de
 
 ### Decision
 
-Daher haben wir uns in gemeinsamer Ansprache dazu entschieden eine ChatBox Funktionalität hinter jedem Berater - Profil zu hinterlegen, womit der User ganz einfach interagieren soll. Nach dem wir gemeinsam die Chatbox Funktionalität grob umfasst haben, ging es für mich in die eigentliche Entwicklung. 
+Daher haben wir uns in gemeinsamer Absprache dazu entschieden, eine ChatBox Funktionalität hinter jedem Berater - Profil zu hinterlegen, womit der User ganz einfach interagieren soll. Nach dem wir gemeinsam die Chatbox Funktionalität grob umfasst haben, ging es für mich in die eigentliche Entwicklung. 
 
 Ich wollte, dass der User, nachdem er auf den Kontakt - Button im Advisor Profil geklickt hat, ein neues Popup Fenster sieht, wo der User folgende Felder ausfüllen kann: Betreff, Email und das Nachrichtenfeld mit dem jeweiligen Inhalt. Sobald der User auf "Senden" klickt, soll die Nachricht auf die jeweilige Email - Adresse des Beraters gesendet werden.
 
@@ -125,14 +287,15 @@ B. Python: Wird ein Standard Code verwendet um eine POST Anfrage an die hinterle
 Zum jetzigen Stand der Entwicklung ist nur eine Email - Adresse für alle Berater verwendet. Das nächste Schritte wäre eventuell für jeden Berater eine individuelle POST - Anfrage zu machen. Je nach Stand der Entwicklung wird es versucht umzusetzen. 
 
 ---
-## Mail - API
+## 02: [Mail - API]
+
+### Meta
 
 Status
-: Done
+: Work in progress - **Decided** - Obsolete
 
 Updated
-:22-07-2024
-
+: 22-07-2024
 
 ### Problem Statement
 
@@ -146,12 +309,14 @@ Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär ke
 
 --
 
-02: [Transaktionsabwicklung - Raslan]
+## 02: [Transaktionsabwicklung - Raslan]
+
+### Meta
 
 Status
 : Done
 
-**Updated
+Updated
 : 22-07-2024
 
 ### Problem Statement
