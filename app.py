@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request,jsonify
+from flask import Flask, flash, redirect, render_template, request,jsonify, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
+from db import Advisor
 from forms import RegistrationForm, LoginForm
 import os 
 from mailjet_rest import Client
@@ -29,16 +30,26 @@ def singleadvisor():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if form.validate_on_submit():
+        advisor = Advisor.query.filter_by(usermail = form.usermail.data).first()
+        if advisor and advisor.password == form.password.data:
+            flash('Login successful!')
     return render_template('login.html', form = form)
 
 @app.route('/registration', methods=['GET', 'POST'])
 def registration():
+    form = RegistrationForm()  # Initialisiere form als Instanz von RegistrationForm
     if request.method == 'POST':
-        form = RegistrationForm
-        usermail = request.form.get('usermail')
-        password = request.form.get('password')
+        advisor = Advisor(usermail=request.form.get('usermail'),
+                          password=request.form.get('password'),
+                          name=request.form.get('name'),
+                          description=request.form.get('description'))
+        db.session.add(advisor)
+        db.session.commit()
+        flash('Registration successful!')
+        return redirect(url_for('login'))
+    return render_template('registration.html', form=form)
 
-    return render_template('registration.html', form = form)
 
 @app.route('/payment')
 def payment():
