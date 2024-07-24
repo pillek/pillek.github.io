@@ -15,10 +15,17 @@ Richte ein Python Virtual Environment ein und aktiviere es.
 2. 
 3. 
 
-## Schritt 2
+## Schritt 3
 
 Installiere die erforderlichem python packages.
 
 pip install -r requirements.txt
 
-## Schritt 2
+## Schritt 4
+
+flask run
+
+## Schritt 5:
+Besuchen Sie http://127.0.0.1:5000/insert/sample, um die Datenbank der App mit einigen Beispieldaten zu füllen.
+
+## Schritt 6: Besuchen Sie http://127.0.0.1:5000/, um die Landing Page anzuzeigen.
