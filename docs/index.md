@@ -8,27 +8,32 @@ nav_order: 0
 
 # Team Mustache 
 
-![Abbildung - Logo ](../assets/images/mustache_logo.jpg)[Abbildung 1 - Logo der Firma]
+![Abbildung - Logo ](../assets/images/mustache_logo.jpg) [https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg]
 
+Willkommen bei Team Mustache - Dies ist die Dokumentation für unser Onlineplattform!
 
+Unsere Plattform revolutioniert die Art und Weise, wie Sie sich kleiden, indem sie Sie mit erfahrenen Modeberatern aus der ganzen Welt verbindet. Bei uns haben Sie die Freiheit, aus einer Vielzahl von Beratern zu wählen, die Ihren spezifischen Bedürfnissen und Vorlieben entsprechen.
 
->Männer stilvoll einkleiden und dabei den Einkauf so einfach wie möglich gestalten. Entdecke die neuesten Trends und finde deinen individuellen Look – alles auf einer Website!
+Egal, ob Sie Ihren Kleiderschrank auffrischen, einen neuen Stil ausprobieren oder sich für einen besonderen Anlass stylen möchten - unsere Berater sind bereit, Ihnen zu helfen. Sie erhalten maßgeschneiderte Modeberatung, die auf Ihren persönlichen Stil, Ihre Figur und Ihr Budget abgestimmt ist.
+
+Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch persönlicher.
+
 
 ## Team members
 
 ### Philipp Tizian Kreis
 
->About : 
+>About : Ich bin Philipp und Student der Wirschaftsinformatik an der HWR Berlin. Meine Interessen spannen sich von Musik über Kochen, zu Handball und Schwimmen und enden bei vielen Studienthemen wie ...
 
-Matr.-Nr.
+Matrikel-Nr.
 : 77211868319
 
 ### Raslan Ebuheit
 
 >About : 
 
-Matr.-Nr.
-: 1234567
+Matrikel-Nr.
+: 77211234567
 
 ## Eidesstattliche Erklärung
 
