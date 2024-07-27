@@ -1,7 +1,8 @@
 import click
 from flask_sqlalchemy import SQLAlchemy  
-from sqlalchemy import orm
+from sqlalchemy import LargeBinary
 from app import app
+
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///advisors.sqlite'
 
@@ -23,7 +24,7 @@ def insert_sample_with_image(image_path):
         image_data = image_file.read()
     advisor = Advisor(
         usermail='sample@example.com',
-        password='securepassword',
+        password='secursepassword',
         name='Sample Advisor',
         description='This is a sample advisor.',
         image=image_data  # Save binary data
