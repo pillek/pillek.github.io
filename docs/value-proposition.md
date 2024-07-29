@@ -25,11 +25,13 @@ Die Web - Applikation dient als Marketplatz für modebewusste Menschen, die ihre
 
 ## Our solution
 
-Unser Produkt "Mustache" hat einen userfreundlichen Ansatz, indem der User mit wenigen Klicks einen Kontakt zu unseren Beratern herstellen kann. Dabei müssen sich unsere User nicht mal anmelden und können über die hinterlegte E-Mail Adresse ohne einem Passwort auf unseren Servern mit den Berater schreiben. Dadurch soll der kognitive Aufwand einer Registrierung zur Konkurrenz deutlich erleichert werden.
+"Mustache" bietet eine Plattform, die Kunden und Modeberater mit nur wenigen Klicks zusammenbringt. Unsere Kunden können aus einer Vielzahl von Beratern wählen, die wichtigsten Details über die Berater sind sofort sichtbar. Dies umfasst sowohl die Referenzen der Berater in verschiedenen Modekategorien wie Casual, Business usw., als auch die Preise der Servicepakete, die die Berater transparent veröffentlichen. Deswegen ist es dem Kunden schneller und einfacher möglich, ein passendes Angebot für seine spezifischen Bedürfnissen zu finden.
+Die Kunden können außerdem ganz einfach über eine hinterlegte E-Mail-Adresse Kontakt zu unseren Beratern aufnehmen und erhalten dann eine maßgeschneiderte Modeberatung, die auf ihren persönlichen Stil, ihre Figur und ihr Budget abgestimmt ist. Dabei ist keine Registrierung/Anmeldung erforderlich, was den Aufwand für den Kunden entscheidend verkleinert.
 
-Zudem können die User mit einer ansprechenden User Experience die wichtigsten Details über die Berater sofort sehen. Sei es, die angegeben Referenzen Berater in der Modekategorie, wie Casual, Business etc... Als auch die Preise der Servicepakete, die die Berater ersichtlich veröffentlichen. 
 
-Unsere Kunden haben ebenfalls die Sorgen, dass die Kaufabwicklung und die zu fordernde Dienstleistung eventuell nicht erfüllt wird. Daher sind all unsere Berater durch eine ID - Abfrage verifiziert und können sich nur registrieren, wenn sie eine gültige Steuer - ID hinterlassen. 
+(Wir verstehen die Bedenken unserer Kunden hinsichtlich der Kaufabwicklung und der Erfüllung der geforderten Dienstleistung. Deshalb sind alle unsere Berater durch eine ID-Abfrage verifiziert und können sich nur registrieren, wenn sie eine gültige Steuer-ID hinterlegen. Dies gewährleistet die Sicherheit und das Vertrauen unserer Kunden in unsere Plattform.)
+
+
 
 ## Zielgruppe
 
