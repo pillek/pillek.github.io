@@ -20,6 +20,4 @@ nav_order: 2
 {: toc }
 </details>
 
-![Mind Map - Frame 6 (1)](https://github.com/pillek/pillek.github.io/assets/79250448/f93a10e8-6eda-44ae-a7eb-37ca737fb645)
-
-
+![Datamodel](../assets/images/datamodel.jpg)
