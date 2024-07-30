@@ -16,8 +16,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///advisor.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 mail = Mail(app)
 
-# from models import Login, Customer, Consultant, CustomerRequest, ConsultantResponse
-
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
@@ -25,7 +23,7 @@ login_manager.login_message_category = 'info'
 
 from database import db
 db.init_app(app)
-from models import User
+from models import User # use model for the user
 from forms import RegistrationForm, LoginForm
 
 @login_manager.user_loader
