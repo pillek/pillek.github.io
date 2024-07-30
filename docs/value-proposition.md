@@ -4,7 +4,7 @@ nav_order: 1
 ---
 
 {: .label }
-[Raslan Ebuheit]
+[Philipp Kreis]
 
 {: .label .label-red }
 [work in progress]
@@ -19,21 +19,25 @@ nav_order: 1
 {: toc }
 </details>
 
-## The problem
+### Das Problem
 
-Die Web - Applikation dient als Marketplatz für modebewusste Menschen, die ihre Persönlichkeit mit neusten Styles zum Ausdruck bringen wollen. Unsere Kunden haben das Problem, dass keine oder wenige Anbieter haben, die ihnen diese Möglichkeit zur Verfügung stellen. Sei es, weil die vorhandenen Anbieter zu teuer sind oder die Kommunikation zu lange dauert bis tatsächlich eine Beratung stattfindet. 
+In der heutigen schnelllebigen Zeit haben viele Menschen Schwierigkeiten, ihren persönlichen Stil zu finden und auf dem neuesten Stand der Mode zu bleiben. Sie fühlen sich oft überwältigt von der Vielzahl an Modeoptionen und sind unsicher, welche Kleidungsstücke am besten zu ihnen passen. Ein wichtiger Aspekt dessen ist die Schwierigkeit, Modetrends und -stile, die man auf Social-Media-Plattformen sieht, auf sich selbst zu reflektieren. Oft ist es nicht einfach, zu verstehen, wie ein bestimmter Look oder Stil auf den eigenen Körper und den persönlichen Stil übertragen werden kann.
 
-## Our solution
+Teilweise haben viele Menschen das Problem, dass es keine oder wenige Anbieter gibt, die ihnen Modeberatung unkompliziert zur Verfügung stellen. Sei es, weil die vorhandenen Anbieter zu teuer sind, die Beratung zu lange dauert oder das Angebot schlichtweg nicht existiert. 
+
+---
+### Unsere Lösung
 
 "Mustache" bietet eine Plattform, die Kunden und Modeberater mit nur wenigen Klicks zusammenbringt. Unsere Kunden können aus einer Vielzahl von Beratern wählen, die wichtigsten Details über die Berater sind sofort sichtbar. Dies umfasst sowohl die Referenzen der Berater in verschiedenen Modekategorien wie Casual, Business usw., als auch die Preise der Servicepakete, die die Berater transparent veröffentlichen. Deswegen ist es dem Kunden schneller und einfacher möglich, ein passendes Angebot für seine spezifischen Bedürfnissen zu finden.
+
 Die Kunden können außerdem ganz einfach über eine hinterlegte E-Mail-Adresse Kontakt zu unseren Beratern aufnehmen und erhalten dann eine maßgeschneiderte Modeberatung, die auf ihren persönlichen Stil, ihre Figur und ihr Budget abgestimmt ist. Dabei ist keine Registrierung/Anmeldung erforderlich, was den Aufwand für den Kunden entscheidend verkleinert.
 
 
 (Wir verstehen die Bedenken unserer Kunden hinsichtlich der Kaufabwicklung und der Erfüllung der geforderten Dienstleistung. Deshalb sind alle unsere Berater durch eine ID-Abfrage verifiziert und können sich nur registrieren, wenn sie eine gültige Steuer-ID hinterlegen. Dies gewährleistet die Sicherheit und das Vertrauen unserer Kunden in unsere Plattform.)
 
 
-
-## Zielgruppe
+---
+### Die Zielgruppe
 
 Bei den Kunden richten wir uns speziell an modebewusste Menschen, die ihren persönlichen Stil verbessern und erweitern möchten. Damit sind Personen gemeint, die gerade erst anfangen, sich für Mode zu interessieren und unsicher sind, welche Kleidungsstücke und Accessoires am besten zu ihnen passen und wie sie diese kombinieren können. Außerdem möchten wir Menschen mit einem vollen Terminkalender ansprechen, die wenig Zeit haben, um sich mit den neuesten Modetrends auseinanderzusetzen oder Einkaufsbummel zu machen. Sie suchen nach einer zeitsparenden Lösung, um stilvoll und aktuell zu bleiben und geben dafür gerne Geld aus. Eine weitere Gruppe sind Personen, die bereits ein gutes Verständnis von Mode haben, aber nach neuen Inspirationen suchen oder Beratung zu einem besonderen Anlass benötigen. Als letztes möchten wir Menschen mit bestimmten Körperformen oder -größen helfen, die Schwierigkeiten haben, passende Kleidung zu finden. Ihnen könnte ein Modeberater Kleidungsgeschäfte und Marken zeigen, die zu ihren Bedürfnissen passen.
 
@@ -41,7 +45,9 @@ Unsere Plattform richtet sich aber auch an eine breite Palette von Modeberatern.
 
 Unsere Plattform steht Benutzern allen Alters zur Verfügung und ist geschlechtsunabhängig. 
 
-## Customer journey
+---
+
+### Customer journey
 
 Erfolgt, sobald die Journey konzeptionell abgeschlossen ist.
 
