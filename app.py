@@ -1,9 +1,9 @@
-from flask import Flask, flash, redirect, render_template, request,jsonify, url_for
+from flask import Flask, render_template, request, jsonify, redirect, url_for, flash, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
-from db import Advisor
-from forms import RegistrationForm, LoginForm
-import os 
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+import os
 from mailjet_rest import Client
 
 api_key = '0ea29243b0002891e017d12b70a4bbda'
@@ -11,13 +11,26 @@ api_secret = 'e83685e4f462e8cf40097d9b895ac6a1'
 mailjet = Client(auth=(api_key, api_secret))
 
 app = Flask(__name__)
-mail = Mail(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SECRET_KEY'] = 'test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///advisor.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = 'dont-know'
-db = SQLAlchemy(app)
+mail = Mail(app)
 
-from models import Login, Customer, Consultant, CustomerRequest, ConsultantResponse
+# from models import Login, Customer, Consultant, CustomerRequest, ConsultantResponse
+
+bcrypt = Bcrypt(app)
+login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+login_manager.login_message_category = 'info'
+
+from database import db
+db.init_app(app)
+from models import User
+from forms import RegistrationForm, LoginForm
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 @app.route('/index')
 def index():
@@ -27,29 +40,39 @@ def index():
 def singleadvisor():
     return render_template('singleadvisor.html')
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route("/register", methods=['GET', 'POST'])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+        db.session.add(user)
+        db.session.commit()
+        flash('Your account has been created! You are now able to log in', 'success')
+        return redirect(url_for('login'))
+    return render_template('registration.html', title='Register', form=form)
+
+@app.route("/login", methods=['GET', 'POST'])
 def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
     form = LoginForm()
     if form.validate_on_submit():
-        advisor = Advisor.query.filter_by(usermail = form.usermail.data).first()
-        if advisor and advisor.password == form.password.data:
-            flash('Login successful!')
-    return render_template('login.html', form = form)
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user, remember=form.remember.data)
+            next_page = request.args.get('next')
+            return redirect(next_page) if next_page else redirect(url_for('home'))
+        else:
+            flash('Login Unsuccessful. Please check email and password', 'danger')
+    return render_template('login.html', title='Login', form=form)
 
-@app.route('/registration', methods=['GET', 'POST'])
-def registration():
-    form = RegistrationForm()  # Initialisiere form als Instanz von RegistrationForm
-    if request.method == 'POST':
-        advisor = Advisor(usermail=request.form.get('usermail'),
-                          password=request.form.get('password'),
-                          name=request.form.get('name'),
-                          description=request.form.get('description'))
-        db.session.add(advisor)
-        db.session.commit()
-        flash('Registration successful!')
-        return redirect(url_for('login'))
-    return render_template('registration.html', form=form)
-
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
 
 @app.route('/payment')
 def payment():
@@ -59,10 +82,15 @@ def payment():
 def overview():
     return render_template('overview.html')
 
-@app.route('/dashboard', methods=['GET', 'POST'])
+@app.route("/dashboard")
+@login_required
 def dashboard():
-
-     return render_template('dashboard.html')
+    # if request.method == 'POST':
+    #     name = request.form.get('name')
+    #     preferences = request.form.get('preferences')
+    #     biography = request.form.get('biography')
+    #     return 'Erfolgreich abgesendet!'
+    return render_template('dashboard.html', title='Dashboard')
 
 @app.route('/home',methods=['GET', 'POST'])
 # new
@@ -118,5 +146,6 @@ def process_payment():
     return jsonify({"message": "Payment processed successfully"}), 200
 
 if __name__ == '__main__':
-    db.create_all()  # Erstelle die Tabellen in der Datenbank
+    with app.app_context():
+        db.create_all()
     app.run(debug=True)

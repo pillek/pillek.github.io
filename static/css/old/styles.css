@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.main-banner {
+    background-color: #ddd;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-banner h1 {
+    color: #333;
+}
+.content {
+    padding: 20px;
+}
+.how-it-works {
+    padding: 20px;
+    text-align: center;
+    background-color: #122949; /* Hintergrundfarbe geändert */
+    color: white; /* Textfarbe auf weiß gesetzt */
+    margin: 20px;
+    border-radius: 8px;
+}
+.how-it-works h2 {
+    margin-bottom: 20px;
+}
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+.step {
+    text-align: center;
+    width: 30%;
+}
+.step img {
+    width: 100px;
+    height: 100px;
+    background-color: #eee; /* Platzhalter für Bild */
+    margin-bottom: 10px;
+}
+
+.advisors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.advisors {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px; /* Abstand zwischen den Beratern und dem neuen Button */
+}
+
+.advisor {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.advisor img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.advisor button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.find-advisors {
+    text-align: center;
+    padding: 20px;
+}
+
+.find-advisors button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.find-advisors button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.find-advisors button:hover {
+    background-color: #555;
+}
+
+
+.reviews {
+    padding: 20px;
+    background-color: #f4c8a3;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+}
+.reviews h2 {
+    margin-bottom: 20px;
+}
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.review {
+    text-align: center;
+    width: 30%;
+}
+.review img {
+    width: 100px;
+    height: 100px;
+    background-color: #eee; /* Platzhalter für Bild */
+    margin-bottom: 10px;
+}
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+.faq-section {
+    padding: 20px;
+}
+.faq {
+    margin-bottom: 10px;
+}
+.faq-question {
+    cursor: pointer;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer p {
+    margin: 0;
+}

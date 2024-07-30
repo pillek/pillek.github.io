@@ -1,61 +1,61 @@
 {
-    "categories": ["Casual", "Street Wear"],
-    "locations": ["Frankfurt", "Berlin", "Köln"],
-    "services": ["Online", "Vor Ort"],
-    "advisors": [
-      {
-        "id": 1,
-        "name": "Berater 1",
-        "description": "Spezialist für lässige Alltagsmode.",
-        "image": "static/images/consultant1.jpeg",
-        "category": "Casual",
-        "location": "Frankfurt",
-        "services": ["Online", "Vor Ort"]
-      },
-      {
-        "id": 2,
-        "name": "Berater 2",
-        "description": "Experte für bequeme und stilvolle Outfits.",
-        "image": "static/images/consultant2.jpeg",
-        "category": "Casual",
-        "location": "Berlin",
-        "services": ["Online"]
-      },
-      {
-        "id": 3,
-        "name": "Berater 3",
-        "description": "Berater für entspannte Freizeitlooks.",
-        "image": "static/images/consultant3.jpeg",
-        "category": "Casual",
-        "location": "Köln",
-        "services": ["Vor Ort"]
-      },
-      {
-        "id": 4,
-        "name": "Berater 4",
-        "description": "Streetwear-Guru mit Fokus auf urbane Trends.",
-        "image": "static/images/consultant1.jpeg",
-        "category": "Street Wear",
-        "location": "Frankfurt",
-        "services": ["Online", "Vor Ort"]
-      },
-      {
-        "id": 5,
-        "name": "Berater 5",
-        "description": "Spezialist für moderne Streetstyle-Looks.",
-        "image": "static/images/consultant2.jpeg",
-        "category": "Street Wear",
-        "location": "Berlin",
-        "services": ["Online"]
-      },
-      {
-        "id": 6,
-        "name": "Berater 6",
-        "description": "Experte für coole und angesagte Streetwear.",
-        "image": "static/images/consultant3.jpeg",
-        "category": "Street Wear",
-        "location": "Köln",
-        "services": ["Vor Ort"]
-      }
-    ]
-  }
+  "categories": ["Casual", "Street Wear"],
+  "locations": ["Frankfurt", "Berlin", "Köln"],
+  "services": ["Online", "Vor Ort"],
+  "advisors": [
+    {
+      "id": 1,
+      "name": "Berater 1",
+      "description": "Spezialist für lässige Alltagsmode.",
+      "image": "static/images/consultant1.jpeg",
+      "category": "Casual",
+      "location": "Frankfurt",
+      "services": ["Online", "Vor Ort"]
+    },
+    {
+      "id": 2,
+      "name": "Berater 2",
+      "description": "Experte für bequeme und stilvolle Outfits.",
+      "image": "static/images/consultant2.jpeg",
+      "category": "Casual",
+      "location": "Berlin",
+      "services": ["Online"]
+    },
+    {
+      "id": 3,
+      "name": "Berater 3",
+      "description": "Berater für entspannte Freizeitlooks.",
+      "image": "static/images/consultant3.jpeg",
+      "category": "Casual",
+      "location": "Köln",
+      "services": ["Vor Ort"]
+    },
+    {
+      "id": 4,
+      "name": "Berater 4",
+      "description": "Streetwear-Guru mit Fokus auf urbane Trends.",
+      "image": "static/images/consultant1.jpeg",
+      "category": "Street Wear",
+      "location": "Frankfurt",
+      "services": ["Online", "Vor Ort"]
+    },
+    {
+      "id": 5,
+      "name": "Berater 5",
+      "description": "Spezialist für moderne Streetstyle-Looks.",
+      "image": "static/images/consultant2.jpeg",
+      "category": "Street Wear",
+      "location": "Berlin",
+      "services": ["Online"]
+    },
+    {
+      "id": 6,
+      "name": "Berater 6",
+      "description": "Experte für coole und angesagte Streetwear.",
+      "image": "static/images/consultant3.jpeg",
+      "category": "Street Wear",
+      "location": "Köln",
+      "services": ["Vor Ort"]
+    }
+  ]
+}

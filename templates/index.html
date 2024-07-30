@@ -1,165 +1,167 @@
 {% extends "base.html" %}
-
 {% block content %}
-
-<div class="main-banner">
-    <img src="static/images/banner.jpg" alt="Fashion Banner">
-    <div class="banner-text">
-        <h1>Style is Eternal</h1>
-        <p>Discover Your Unique Fashion Identity</p>
-    </div>
-</div>
-<div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus. Maecenas id magna sit amet nisi consectetur cursus. Nulla facilisi. Duis sollicitudin, tortor nec pellentesque dignissim, odio orci feugiat eros, ac fringilla dolor lorem sed leo. Aliquam erat volutpat.</p>
-</div>
-
-<!-- How It Works Section -->
-<div class="how-it-works">
-    <h2>So funktioniert Mustache</h2>
-    <div class="steps">
-        <div class="step">
-            <img src="static/images/step1.png" alt="Schritt 1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="step">
-            <img src="static/images/step2.png" alt="Schritt 2">
-            <p>Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</p>
-        </div>
-        <div class="step">
-            <img src="static/images/step3.png" alt="Schritt 3">
-            <p>Maecenas id magna sit amet nisi consectetur cursus.</p>
+    <div class="main-banner">
+        <img src="static/images/banner.jpg" alt="Fashion Banner">
+        <div class="banner-text">
+            <h1>Style is Eternal</h1>
+            <p>Discover Your Unique Fashion Identity</p>
         </div>
     </div>
-</div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus. Maecenas id magna sit amet nisi consectetur cursus. Nulla facilisi. Duis sollicitudin, tortor nec pellentesque dignissim, odio orci feugiat eros, ac fringilla dolor lorem sed leo. Aliquam erat volutpat.</p>
+    </div>
 
-<!-- Customer Reviews Section -->
-<div class="reviews">
-    <h2>Das sagen unsere Kunden über uns</h2>
-    <div class="review-cards">
-        <div class="review">
-            <img src="static/images/avatars/avatar1.jpg" alt="Customer 1">
-            <div class="stars">★★★★★</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- How It Works Section -->
+    <div class="how-it-works">
+        <h2>So funktioniert Mustache</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="static/images/step1.png" alt="Schritt 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="step">
+                <img src="static/images/step2.png" alt="Schritt 2">
+                <p>Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</p>
+            </div>
+            <div class="step">
+                <img src="static/images/step3.png" alt="Schritt 3">
+                <p>Maecenas id magna sit amet nisi consectetur cursus.</p>
+            </div>
         </div>
-        <div class="review">
-            <img src="static/images/avatars/avatar2.jpg" alt="Customer 2">
-            <div class="stars">★★★★★</div>
-            <p>Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</p>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div class="reviews">
+        <h2>Das sagen unsere Kunden über uns</h2>
+        <div class="review-cards">
+            <div class="review">
+                <img src="static/images/avatars/avatar1.jpg" alt="Customer 1">
+                <div class="stars">★★★★★</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="review">
+                <img src="static/images/avatars/avatar2.jpg" alt="Customer 2">
+                <div class="stars">★★★★★</div>
+                <p>Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</p>
+            </div>
+            <div class="review">
+                <img src="static/images/avatars/avatar3.jpg" alt="Customer 3">
+                <div class="stars">★★★★★</div>
+                <p>Maecenas id magna sit amet nisi consectetur cursus.</p>
+            </div>
         </div>
-        <div class="review">
-            <img src="static/images/avatars/avatar3.jpg" alt="Customer 3">
-            <div class="stars">★★★★★</div>
-            <p>Maecenas id magna sit amet nisi consectetur cursus.</p>
+    </div>
+
+    <!-- Advisors Section -->
+    <div class="advisors">
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
+            <h3>Berater 1</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <a class="btn-view-profile" href="singleadvisor?id=1">Profil ansehen</a>
+            <button onclick="toggleContactPopup()">Kontakt</button>
+        </div>
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
+            <h3>Berater 2</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <a class="btn-view-profile" href="singleadvisor?id=2">Profil ansehen</a>
+            <button onclick="toggleContactPopup()">Kontakt</button>
+        </div>
+        <div class="advisor">
+            <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
+            <h3>Berater 3</h3>
+            <p>Kurzbeschreibung des Beraters.</p>
+            <a class="btn-view-profile" href="singleadvisor?id=3">Profil ansehen</a>
+            <button onclick="toggleContactPopup()">Kontakt</button>
+        </div>
+        <!-- New Button for Finding Advisors -->
+        <div class="find-advisors">
+        <a class="btn-find-advisors" href="advisors">Gleich Passende Berater finden</a>
+</div>
+
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFAQ(1)">Was kostet Mustache?</div>
+            <div class="faq-answer" id="faq-answer-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFAQ(2)">Wie werden die Berater kontaktiert?</div>
+            <div class="faq-answer" id="faq-answer-2">Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFAQ(3)">Was passiert, wenn ich mit der Beratung unzufrieden bin?</div>
+            <div class="faq-answer" id="faq-answer-3">Maecenas id magna sit amet nisi consectetur cursus.</div>
         </div>
     </div>
-</div>
 
-<!-- Advisors Section -->
-<div class="advisors">
-    <div class="advisor">
-        <img src="{{ url_for('static', filename='images/consultant1.jpeg') }}" alt="Advisor 1">
-        <h3>Berater 1</h3>
-        <p>Kurzbeschreibung des Beraters.</p>
-        <a class="btn-view-profile" href="singleadvisor?id=1">Profil ansehen</a>
-        <button onclick="toggleContactPopup()">Kontakt</button>
+    <div class="footer">
+        <p>Impressum</p>
+        <p><a href="aboutus.html">Wer ist Mustache</a></p>
+        <p>© By Mustache</p>
     </div>
-    <div class="advisor">
-        <img src="{{ url_for('static', filename='images/consultant2.jpeg') }}" alt="Advisor 2">
-        <h3>Berater 2</h3>
-        <p>Kurzbeschreibung des Beraters.</p>
-        <a class="btn-view-profile" href="singleadvisor?id=2">Profil ansehen</a>
-        <button onclick="toggleContactPopup()">Kontakt</button>
-    </div>
-    <div class="advisor">
-        <img src="{{ url_for('static', filename='images/consultant3.jpeg') }}" alt="Advisor 3">
-        <h3>Berater 3</h3>
-        <p>Kurzbeschreibung des Beraters.</p>
-        <a class="btn-view-profile" href="singleadvisor?id=3">Profil ansehen</a>
-        <button onclick="toggleContactPopup()">Kontakt</button>
-    </div>
-    <!-- New Button for Finding Advisors -->
-    <div class="find-advisors">
-    <a class="btn-find-advisors" href="advisors">Gleich Passende Berater finden</a>
-</div>
 
-</div>
-
-<!-- FAQ Section -->
-<div class="faq-section">
-    <div class="faq">
-        <div class="faq-question" onclick="toggleFAQ(1)">Was kostet Mustache?</div>
-        <div class="faq-answer" id="faq-answer-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <!-- Kontakt-Popup -->
+    <div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
+        <h2>Nachricht senden</h2>
+        <input type="text" id="subject" placeholder="Betreff"><br>
+        <input type="text" id="email" placeholder="Email"><br>
+        <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br>
+        <button onclick="sendMessage()">Senden</button>
     </div>
-    <div class="faq">
-        <div class="faq-question" onclick="toggleFAQ(2)">Wie werden die Berater kontaktiert?</div>
-        <div class="faq-answer" id="faq-answer-2">Vestibulum vehicula ex eu ante vehicula, ac viverra nisi dapibus.</div>
-    </div>
-    <div class="faq">
-        <div class="faq-question" onclick="toggleFAQ(3)">Was passiert, wenn ich mit der Beratung unzufrieden bin?</div>
-        <div class="faq-answer" id="faq-answer-3">Maecenas id magna sit amet nisi consectetur cursus.</div>
-    </div>
-</div>
 
-
-<!-- Kontakt-Popup -->
-<div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
-    <h2>Nachricht senden</h2>
-    <input type="text" id="subject" placeholder="Betreff"><br>
-    <input type="text" id="email" placeholder="Email"><br>
-    <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br>
-    <button onclick="sendMessage()">Senden</button>
-</div>
-
-<script>
-    // JavaScript-Funktion für FAQ-Toggle bleibt unverändert
-    function toggleFAQ(index) {
-        const answer = document.getElementById(`faq-answer-${index}`);
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none';
-        } else {
-            answer.style.display = 'block';
+    <script>
+        // JavaScript-Funktion für FAQ-Toggle bleibt unverändert
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
         }
-    }
 
-    // Display - Funktion für das Kontakt-Popup
-    function toggleContactPopup() {
-        const popup = document.getElementById('contactPopup');
-        popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
-    }
-
-    // Funktion für das Senden der Nachricht
-    function sendMessage() {
-        try {
-            // Get the values from the input fields
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            // Log the values to the console (for debugging)
-            console.log('Email:', email);
-            console.log('Subject:', subject);
-            console.log('Message:', message);
-            
-            fetch('/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ email, subject, message })
-            }).then(response => response.json()).then(data => {
-                console.log('Success:', data);
-            }).catch((error) => {
-                console.error('Error:', error);
-            });
-
-            // Close the popup and show success alert
-            toggleContactPopup();
-            alert("Nachricht gesendet!");
-        } catch (error) {
-            console.error('An error occurred:', error);
+        // Display - Funktion für das Kontakt-Popup
+        function toggleContactPopup() {
+            const popup = document.getElementById('contactPopup');
+            popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
         }
-    }
-</script>
-<script src="{{url_for('static', filename='images/JavaScript/scripts.js')}}"></script>
 
+        // Funktion für das Senden der Nachricht
+        function sendMessage() {
+            try {
+                // Get the values from the input fields
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                // Log the values to the console (for debugging)
+                console.log('Email:', email);
+                console.log('Subject:', subject);
+                console.log('Message:', message);
+                
+                fetch('/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, subject, message })
+                }).then(response => response.json()).then(data => {
+                    console.log('Success:', data);
+                }).catch((error) => {
+                    console.error('Error:', error);
+                });
+
+                // Close the popup and show success alert
+                toggleContactPopup();
+                alert("Nachricht gesendet!");
+            } catch (error) {
+                console.error('An error occurred:', error);
+            }
+        }
+    </script>
+    <script src="{{url_for('static', filename='images/JavaScript/scripts.js')}}"></script>
 {% endblock %}
