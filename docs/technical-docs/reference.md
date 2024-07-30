@@ -86,3 +86,8 @@ nav_order: 3
 **Sample output:**
 
 Browser shows: `Database flushed and populated with some sample data.`
+
+
+
+
+[Design Desicions](https://pillek.github.io/design-decisions.html)

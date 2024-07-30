@@ -51,3 +51,5 @@ Unsere Plattform steht Benutzern allen Alters zur Verfügung und ist geschlechts
 
 Erfolgt, sobald die Journey konzeptionell abgeschlossen ist.
 
+
+[Architecture](https://pillek.github.io/technical-docs/architecture.html)

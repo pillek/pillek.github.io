@@ -381,3 +381,5 @@ Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank un
 2. Übertragung der Aufgabe: Raslan hat evtl. mehr Motivation und die Fähigkeiten, die Aufgabe zu übernehmen, während Philipp sich auf die Dokumentation konzentriert. Eine neue Person muss sich aber erst in die Materie einfinden.
 
 ---
+
+[User Evaluation](https://pillek.github.io/user-eval.html)

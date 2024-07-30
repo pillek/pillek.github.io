@@ -45,3 +45,6 @@ Updated
 [What did you learn from this evaluation and what will you change to improve? Example: "We aim to decrease the drop-out rate by not asking for a birth date. We will re-run this evaluation to measure the impact."]
 
 ---
+
+
+[Goals](https://pillek.github.io/team-eval/goals.html)

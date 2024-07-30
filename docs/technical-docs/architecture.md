@@ -45,3 +45,7 @@ nav_order: 1
 ## Cross-cutting concerns
 
 [Describe anything that is important for a solid understanding of your codebase. Most likely, you want to explain the behavior of (parts of) your application. In this section, you may also link to important [design decisions](../design-decisions.md).]
+
+
+
+[Data Model](https://pillek.github.io/technical-docs/data-model.html)
