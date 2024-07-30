@@ -1,160 +1,177 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-<div class="main-content">
-    <div class="advisor-image">
-        <img id="advisor-img" src="" alt="Advisor Image">
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisor Detailseite</title>
+    <link rel="stylesheet" href="static/css/singleadvisor.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-center">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/login">Register</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="advisor-info">
-        <h2 id="advisor-name"></h2>
-        <div class="section">
-            <div class="section-title about-me">Über mich</div>
-            <div id="advisor-description" class="section-content"></div>
-             <div class="section-content">
-            <p>Du möchtest mit deine Persönlichkeit mit dem gewissen Style ausdrücken? Dann buche mich als deinen persönlichen Styling Berater! Ich begleite schon seit 5 Jahren die bekanntesten Fashion Influencer aus Instagram und mache auch deinen Style Likebale. Just Call Me!</p>
-            </div>
+
+    <div class="main-content">
+        <div class="advisor-image">
+            <img id="advisor-img" src="" alt="Advisor Image">
         </div>
-        <div class="section">
-            <div class="section-title">Details</div>
-            <div class="section-content">
-                <p>Kategorie: <span id="advisor-category"></span></p>
-                <p>Standort: <span id="advisor-location"></span></p>
-                <p>Services: <span id="advisor-services"></span></p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="section-title">Meine Stylings</div>
-            <div class="photos">
-                <img src="{{ url_for('static', filename='images/men1.jpg') }}" alt="Style 1">
-                <img src="{{ url_for('static', filename='images/men2.jpg') }}" alt="Style 2">
-                <img src="{{ url_for('static', filename='images/men3.jpg') }}" alt="Style 3">
-                <img src="{{ url_for('static', filename='images/men4.png') }}" alt="Style 4">
-                <img src="{{ url_for('static', filename='images/men5.jpg') }}" alt="Style 5">
-                <img src="{{ url_for('static', filename='images/men6.jpg') }}" alt="Style 6">
-            </div>
-        </div>
-        <div class="section services">
-            <div class="section-title">Meine Services</div>
-            <div class="service-package">
-                <h3>Service Paket 1 <span>50€</span></h3>
-                <div class="dropdown">
-                    <details>
-                        <summary>Item 1</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 2</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 3</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                </div>
-                <div class="button-container">
-                    <button><a href="payment.html">Gleich Buchen</a></button>
+        <div class="advisor-info">
+            <h2 id="advisor-name"></h2>
+            <div class="section">
+                <div class="section-title about-me">Über mich</div>
+                <div id="advisor-description" class="section-content"></div>
+                 <div class="section-content">
+                <p>Du möchtest mit deine Persönlichkeit mit dem gewissen Style ausdrücken? Dann buche mich als deinen persönlichen Styling Berater! Ich begleite schon seit 5 Jahren die bekanntesten Fashion Influencer aus Instagram und mache auch deinen Style Likebale. Just Call Me!</p>
                 </div>
             </div>
-            <div class="service-package">
-                <h3>Service Paket 2 <span>75€</span></h3>
-                <div class="dropdown">
-                    <details>
-                        <summary>Item 1</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 2</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 3</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
+            <div class="section">
+                <div class="section-title">Details</div>
+                <div class="section-content">
+                    <p>Kategorie: <span id="advisor-category"></span></p>
+                    <p>Standort: <span id="advisor-location"></span></p>
+                    <p>Services: <span id="advisor-services"></span></p>
                 </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Meine Stylings</div>
+                <div class="photos">
+                    <img src="{{ url_for('static', filename='images/men1.jpg') }}" alt="Style 1">
+                    <img src="{{ url_for('static', filename='images/men2.jpg') }}" alt="Style 2">
+                    <img src="{{ url_for('static', filename='images/men3.jpg') }}" alt="Style 3">
+                    <img src="{{ url_for('static', filename='images/men4.png') }}" alt="Style 4">
+                    <img src="{{ url_for('static', filename='images/men5.jpg') }}" alt="Style 5">
+                    <img src="{{ url_for('static', filename='images/men6.jpg') }}" alt="Style 6">
+                </div>
+            </div>
+            <div class="section services">
+                <div class="section-title">Meine Services</div>
+                <div class="service-package">
+                    <h3>Service Paket 1 <span>50€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
                     <div class="button-container">
                         <button><a href="payment.html">Gleich Buchen</a></button>
                     </div>
-            </div>
-            <div class="service-package">
-                <h3>Service Paket 3 <span>120€</span></h3>
-                <div class="dropdown">
-                    <details>
-                        <summary>Item 1</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 2</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
-                    <details>
-                        <summary>Item 3</summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </details>
                 </div>
-                <div class="button-container">
-                    <button><a href="payment.html">Gleich Buchen</a></button>
+                <div class="service-package">
+                    <h3>Service Paket 2 <span>75€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
+                        <div class="button-container">
+                            <button><a href="payment.html">Gleich Buchen</a></button>
+                        </div>
+                </div>
+                <div class="service-package">
+                    <h3>Service Paket 3 <span>120€</span></h3>
+                    <div class="dropdown">
+                        <details>
+                            <summary>Item 1</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 2</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                        <details>
+                            <summary>Item 3</summary>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </details>
+                    </div>
+                    <div class="button-container">
+                        <button><a href="payment.html">Gleich Buchen</a></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="advisor-button">
-            <button onclick="showContactPopup()">Fragen an den Berater?</button>
+            <div class="advisor-button">
+                <button onclick="showContactPopup()">Fragen an den Berater?</button>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="footer">
-    <p>Impressum</p>
-    <p><a href="aboutus.html">Wer ist Mustache</a></p>
-    <p>© By Mustache</p>
-</div>
+    <div class="footer">
+        <p>Impressum</p>
+        <p><a href="aboutus.html">Wer ist Mustache</a></p>
+        <p>© By Mustache</p>
+    </div>
 
-<div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
-    <h2>Nachricht senden</h2>
-    <input type="text" id="subject" placeholder="Betreff"><br>
-    <input type="text" id="email" placeholder="Email"><br>
-    <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br>
-    <button onclick="sendMessage()">Senden</button>
-</div>
+    <div id="contactPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 1px solid #333;">
+        <h2>Nachricht senden</h2>
+        <input type="text" id="subject" placeholder="Betreff"><br>
+        <input type="text" id="email" placeholder="Email"><br>
+        <textarea id="message" rows="4" cols="50" placeholder="Nachricht"></textarea><br>
+        <button onclick="sendMessage()">Senden</button>
+    </div>
 
-<script>
-    function getAdvisorDetails() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const advisorId = urlParams.get('id');
+    <script>
+        function getAdvisorDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const advisorId = urlParams.get('id');
 
-        fetch('static/json/advisors.json')
-            .then(response => response.json())
-            .then(data => {
-                const advisor = data.advisors.find(a => a.id === parseInt(advisorId));
-                if (advisor) {
-                    document.getElementById('advisor-img').src = advisor.image;
-                    document.getElementById('advisor-name').textContent = advisor.name;
-                    document.getElementById('advisor-description').textContent = advisor.description;
-                    document.getElementById('advisor-category').textContent = advisor.category;
-                    document.getElementById('advisor-location').textContent = advisor.location;
-                    document.getElementById('advisor-services').textContent = advisor.services.join(', ');
-                } else {
-                    console.error('Advisor not found');
-                }
-            })
-            .catch(error => console.error('Error loading advisor details:', error));
-    }
+            fetch('static/json/advisors.json')
+                .then(response => response.json())
+                .then(data => {
+                    const advisor = data.advisors.find(a => a.id === parseInt(advisorId));
+                    if (advisor) {
+                        document.getElementById('advisor-img').src = advisor.image;
+                        document.getElementById('advisor-name').textContent = advisor.name;
+                        document.getElementById('advisor-description').textContent = advisor.description;
+                        document.getElementById('advisor-category').textContent = advisor.category;
+                        document.getElementById('advisor-location').textContent = advisor.location;
+                        document.getElementById('advisor-services').textContent = advisor.services.join(', ');
+                    } else {
+                        console.error('Advisor not found');
+                    }
+                })
+                .catch(error => console.error('Error loading advisor details:', error));
+        }
 
-    function showContactPopup() {
-        document.getElementById('contactPopup').style.display = 'block';
-    }
+        function showContactPopup() {
+            document.getElementById('contactPopup').style.display = 'block';
+        }
 
-    function sendMessage() {
-        const subject = document.getElementById('subject').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+        function sendMessage() {
+            const subject = document.getElementById('subject').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-        console.log('Sending message:', { subject, email, message });
+            console.log('Sending message:', { subject, email, message });
 
-        document.getElementById('contactPopup').style.display = 'none';
-        alert('Nachricht gesendet!');
-    }
+            document.getElementById('contactPopup').style.display = 'none';
+            alert('Nachricht gesendet!');
+        }
 
-    document.addEventListener('DOMContentLoaded', getAdvisorDetails);
-</script>
-{% endblock %}
+        document.addEventListener('DOMContentLoaded', getAdvisorDetails);
+    </script>
+</body>
+</html>

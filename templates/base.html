@@ -1,23 +1,39 @@
-<!doctype html>
-<html>
-    <link rel="stylesheet" href="../static/css/style.css">
-    <head>
-      <title>Mustache Fashion Platform</title>
-
-    </head>
-    <body>
-        <div class="header"><a href="/index">Home</a>
-        <a href="/login">Login</a>
-        <a href="/dashboard">Dashboard</a></div>
-
-
-    {% block content %}{% endblock %}
-    <div class="footer">
-        <p>Impressum</p>
-        <p><a href="aboutus.html">Wer ist Mustache</a></p>
-        <p>© By Mustache</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/dashboard.css">
+    <link rel="stylesheet" href="static/css/aboutus.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-center">
+            <ul>
+                <li><a href="/">Home</a></li>
+                {% if current_user.is_authenticated %}
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                {% endif %}
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
     </div>
-
-        
-    </body>
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </div>
+</body>
 </html>
