@@ -23,14 +23,14 @@ Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch per
 
 ### Philipp Tizian Kreis
 
->About : Ich bin Philipp und Student der Wirschaftsinformatik an der HWR Berlin. Meine Interessen spannen sich von Musik über Kochen, zu Handball und Schwimmen und enden bei vielen Studienthemen wie ...
+>Meine Motivation : Ich bin Philipp und Student der Wirschaftsinformatik an der HWR Berlin. Meine Interessen spannen sich von Musik über Kochen, zu Handball und Schwimmen und enden bei vielen Studienthemen wie ...
 
 Matrikel-Nr.
 : 77211868319
 
 ### Raslan Ebuheit
 
->About : 
+>Meine Motivation : 
 
 Matrikel-Nr.
 : 77211234567

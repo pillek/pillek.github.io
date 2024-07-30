@@ -66,3 +66,7 @@ graph TD;
 ```
 
 Visit the [Mermaid docs](https://mermaid.js.org/intro/) for a thorough description of the charting possibilities.
+
+
+
+[Home](https://pillek.github.io/)
