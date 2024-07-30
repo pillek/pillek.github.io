@@ -309,7 +309,7 @@ Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär ke
 
 --
 
-## 02: [Transaktionsabwicklung - Raslan]
+## 02: Transaktionsabwicklung
 
 ### Meta
 
@@ -354,5 +354,30 @@ Nachteile:
 Kann aufgrund der Menge an Informationen auf einer Seite für die Benutzer überwältigend sein.
 Höheres Risiko, dass Nutzer Felder übersehen oder falsch ausfüllen.
 Weniger geführte Erfahrung, was zu höheren Abbruchraten führen kann.
+
+---
+
+
+## 01: Änderung Aufgabenverteilung eine Woche vor Ende
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+### Problem statement
+
+Eine Woche vor dem Abgabetermin des Projekts kam Philipp wegen eines Fehlercodes in der Datenbank und der allgemeinen Logik des Projekts, die er bis dahin entwickelt hatte, nicht weiter. Deswegen entschied er sich vollständige Neugestaltung der Datenbank in einem separaten Testprojekt, was zu einer erheblichen Verzögerung eine Woche vor Abgabe führte.
+### Decision
+
+Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank und die Logik des Projekts von Philipp auf Raslan zu übertragen. Während Philipp Raslan dabei hilft die Datenbank zu programmieren, kümmert sich Philipp eher  um die Dokumentation. Wir hoffen dadurch das Projekt trotz der unerwarteten Herausforderungen rechtzeitig abzuschließen.
+
+### Regarded options
+
+1. Philipp behebt den Fehler selbst: Dies hätte zu weiteren Verzögerungen führen können, da Philipp bereits Zeit mit der Fehlerbehebung verbracht hatte. Philipp steckt aber bereits tief im Thema.
+2. Übertragung der Aufgabe: Raslan hat evtl. mehr Motivation und die Fähigkeiten, die Aufgabe zu übernehmen, während Philipp sich auf die Dokumentation konzentriert. Eine neue Person muss sich aber erst in die Materie einfinden.
 
 ---
