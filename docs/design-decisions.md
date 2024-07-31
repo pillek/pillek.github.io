@@ -256,7 +256,7 @@ Wir bauen eine SQLAlchemy Datenbank mit den Tabellen: User, Login,...
 
 ---
 
-## 06: [Kein User Login nötig - Raslan]
+## 06: Welche Nutzer müssen sich registrieren können?
 
 ### Meta
 
@@ -287,7 +287,7 @@ B. Python: Wird ein Standard Code verwendet um eine POST Anfrage an die hinterle
 Zum jetzigen Stand der Entwicklung ist nur eine Email - Adresse für alle Berater verwendet. Das nächste Schritte wäre eventuell für jeden Berater eine individuelle POST - Anfrage zu machen. Je nach Stand der Entwicklung wird es versucht umzusetzen. 
 
 ---
-## 02: [Mail - API]
+## 02: Wie die Probleme bei der Mail lösen? 
 
 ### Meta
 
@@ -299,7 +299,7 @@ Updated
 
 ### Problem Statement
 
-Wir haben zwar eine Chatbox Funktionalität für alle Advisor Profile erstellt, aber das Problem war, dass die Mails nicht, wie gewünscht, in der hinterlegten Mail - Adresse ankamen. Ich hab dann versucht die Vertrauenswürdigkeit der Website - Mails in den Google Einstellungen anzupassen und hatte dabei keinen Erfolg gehabt.
+Wir haben zwar eine Chatbox Funktionalität für alle Advisor Profile erstellt, aber das Problem war, dass die Mails nicht, wie gewünscht, in der hinterlegten Mail - Adresse ankamen. Wir haben dann versucht die Vertrauenswürdigkeit der Website - Mails in den Google Einstellungen anzupassen und hatte dabei keinen Erfolg gehabt.
 
 ### Decision
 
@@ -309,7 +309,7 @@ Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär ke
 
 --
 
-## 02: Transaktionsabwicklung
+## 02: Wie gestalten wir den Bezahlungsvorgang?
 
 ### Meta
 
@@ -381,5 +381,85 @@ Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank un
 2. Übertragung der Aufgabe: Raslan hat evtl. mehr Motivation und die Fähigkeiten, die Aufgabe zu übernehmen, während Philipp sich auf die Dokumentation konzentriert. Eine neue Person muss sich aber erst in die Materie einfinden.
 
 ---
+
+## 01: Welche Informationen können in dem Beraterprofil angegeben werden?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Gibt der Berater direkt bei der Registrierung alle Informationen über sich ab?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Können wir in die Auswahl der Berater eine Filter-/Suchfunktion einbauen, damit sich Kunden besser zurecht finden?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Gibt der Berater direkt bei der Registrierung alle Informationen über sich ab?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Welche Möglichkeiten gibt es eine API in unsere Plattform einzubauen?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Uns ist die Idee einer ChatBox gekommen, ist es einfach so etwas einzubauen oder nicht?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01: Bei Raslan funktioniert Flask nicht, wegen einem zu alten Laptop, wie können wir trotzdem zu zweit programmieren.
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
+
+## 01:  Aufgrund von komplett verschiedenen Arbeitsalltagen ist die Kommunikation von uns langsam und man versteht sich teilweise falsch. Was ändern wir?
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 27.07.2024
 
 [User Evaluation](https://pillek.github.io/user-eval.html)
