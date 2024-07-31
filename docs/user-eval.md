@@ -45,6 +45,48 @@ Updated
 [What did you learn from this evaluation and what will you change to improve? Example: "We aim to decrease the drop-out rate by not asking for a birth date. We will re-run this evaluation to measure the impact."]
 
 ---
+## 01: Registrierung und Drop-out-Rate
 
+ ### Goal
+Wie lange dauert es, ein neues Konto zu registrieren und wie hoch ist die Drop-out-Rate?
+
+### Method
+
+20 Testnutzer werden angelegt, die den Registrierungsprozess durchlaufen.
+Wir messen die Zeit, die jeder Nutzer benötigt, um die Registrierung abzuschließen und erfassen die Drop-out-Rate und die Gründe für den Abbruch.
+ 
+### Results
+
+Durchschnittlich benötigen Nutzer ... Minuten für die Registrierung.
+Die Drop-out-Rate beträgt ...%.
+Hauptgründe für das Abbrechen: ...
+
+### Implications
+
+(Anzahl der Pflichtfelder, Anweisungen, erneute Evaluation)
+
+
+## 02: Benutzerfreundlichkeit der Beraterauswahl
+
+### Goal
+
+Wie einfach können Kunden, einen passenden Berater finden?
+
+### Method
+
+Rekrutieren von ... Testnutzern.
+
+Berater auswählen, der Bedürfnissen entsprich, Schwierigkeiten und Verwirrungen notieren, Umfrage fürs Nutzererlebnis
+
+### Results
+
+...% der Nutzer hatten Probleme mit.
+Hauptprobleme waren: ...
+
+### Implications
+
+Filter
+Anzahl der angezeigten Berater
+erneute Evaluation
 
 [Goals](https://pillek.github.io/team-eval/goals.html)
