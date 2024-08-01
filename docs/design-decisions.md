@@ -378,7 +378,7 @@ Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank un
 ### Regarded options
 
 1. Philipp behebt den Fehler selbst: Dies hätte zu weiteren Verzögerungen führen können, da Philipp bereits Zeit mit der Fehlerbehebung verbracht hatte. Philipp steckt aber bereits tief im Thema.
-2. Übertragung der Aufgabe: Raslan hat evtl. mehr Motivation und die Fähigkeiten, die Aufgabe zu übernehmen, während Philipp sich auf die Dokumentation konzentriert. Eine neue Person muss sich aber erst in die Materie einfinden.
+2. Übertragung der Aufgabe: Raslan hat evtl. mehr Motivation und die Fähigkeiten, die Aufgabe zu übernehmen, während Philipp sich auf die Dokumentation konzentriert. Eine neue Person muss sich aber erst in die Materie reinfinden.
 
 ---
 

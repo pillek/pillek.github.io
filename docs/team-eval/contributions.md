@@ -4,8 +4,6 @@ parent: Team Evaluation
 nav_order: 4
 ---
 
-{: .label }
-[Philipp Kreis]
 
 {: .label .label-red }
 [work in progress]
@@ -20,16 +18,33 @@ nav_order: 4
 {: toc }
 </details>
 
-## [Philipp Kreis]
+## Philipp Kreis
 
-Contributions
+Contributions Web-App
 : Login.html
 : app.py
 : dashboard.html
+: registration.html
+: (Datenbankimplementierung bis Raslan sie übernahm [Design Decision](https://pillek.github.io/design-decisions html#01-%C3%A4nderung-aufgabenverteilung-eine-woche-vor-ende))
 
-## [Raslan Ebuheit]
+Contributions Dokumentation
+:index.md
+:value-proposition.md
+:architecture.md
+:data-model.md
+:reference.md
+:design-decisions.md
+:user-evaluation.md
+:goals
+:improvements.md
+:peer-review.md
+:contributions.md
+:ui-components.md
 
-Contributions
+
+## Raslan Ebuheit
+
+### Contributions
 : User Journey besteht aus:
 : Index.html
 : Chatbox - Funktionalität
@@ -40,6 +55,10 @@ Contributions
 : payment.html
 : aboutus.html
 : app.py
+
+
+Contributions Dokumentation
+
 
 
 [UI Components](https://pillek.github.io/ui-components.html)
