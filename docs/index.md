@@ -9,7 +9,7 @@ nav_order: 0
 # Team Mustache
 ![Abbildung - Logo ](../assets/images/mustache_logo.jpg) 
 
-(https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg)
+*(https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg)*
 
 Willkommen bei Team Mustache - Dies ist die Dokumentation für unser Onlineplattform!
 
@@ -21,7 +21,7 @@ Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch per
 
 
 [Link button](../assets/images/presentation-mustache.pdf){: .btn }
-
+![Link button](../assets/images/presentation-mustache.pdf)
 
 ## Team members
 
