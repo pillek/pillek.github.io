@@ -6,8 +6,7 @@ nav_order: 0
 {: .label .label-red }
 [work in progress]
 
-# Team Mustache 
-
+# Team Mustache
 ![Abbildung - Logo ](../assets/images/mustache_logo.jpg) 
 
 (https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg)
@@ -19,6 +18,9 @@ Unsere Plattform revolutioniert die Art und Weise, wie Sie sich kleiden, indem s
 Egal, ob Sie Ihren Kleiderschrank auffrischen, einen neuen Stil ausprobieren oder sich für einen besonderen Anlass stylen möchten - unsere Berater sind bereit, Ihnen zu helfen. Sie erhalten maßgeschneiderte Modeberatung, die auf Ihren persönlichen Stil, Ihre Figur und Ihr Budget abgestimmt ist.
 
 Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch persönlicher.
+
+
+[Link button](../assets/images/presentation-mustache.pdf){: .btn }
 
 
 ## Team members
