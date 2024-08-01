@@ -19,9 +19,11 @@ Egal, ob Sie Ihren Kleiderschrank auffrischen, einen neuen Stil ausprobieren ode
 
 Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch persönlicher.
 
+&nbsp;
+&nbsp;
 
-[Link button](../assets/images/presentation-mustache.pdf){: .btn }
-![Link button](../assets/images/presentation-mustache.pdf)
+[Start](https://pillek.github.io/value-proposition.html){: .btn .btn-purple }
+[Unser Projekt auf GitHub](https://github.com/pillek/pillek.github.io){: .btn }
 
 ## Team members
 
