@@ -49,7 +49,32 @@ Unsere Plattform steht Benutzern allen Alters zur Verfügung und ist geschlechts
 
 ### Customer journey
 
-Erfolgt, sobald die Journey konzeptionell abgeschlossen ist.
+#### 1. Homepage:
+
+
+Der Kunde landet auf der Homepage, wo er eine Auswahl an Beratern sieht und das Konzept der Website erklärt bekommt.
+
+#### 2. Beraterübersicht:
+
+
+Über einen Button auf der Homepage gelangt der Kunde zur Beraterübersicht, wo er detaillierte Informationen über die einzelnen Berater findet.
+   
+#### 3. Beraterprofil:
+
+
+Der Kunde kann sich das Profil eines Beraters im Detail ansehen, um mehr über dessen Qualifikationen und Erfahrungen zu erfahren.
+
+#### 4. Nachricht senden:
+
+
+Über einen Button im Profil des Beraters kann der Kunde eine Nachricht an den Berater schicken.
+
+#### 5. Antwort per Email:
+
+
+Der Berater antwortet per Email, und die beiden klären alle weiteren Details.
+
+### Advisor journey
 
 
 [Architecture](https://pillek.github.io/technical-docs/architecture.html)

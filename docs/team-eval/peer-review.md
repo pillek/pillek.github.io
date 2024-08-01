@@ -4,8 +4,6 @@ parent: Team Evaluation
 nav_order: 3
 ---
 
-{: .label }
-[Philipp Kreis/Raslan Ebuheit]
 
 {: .label .label-red }
 [work in progress]
