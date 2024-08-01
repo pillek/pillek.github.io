@@ -89,4 +89,4 @@ Filter
 Anzahl der angezeigten Berater
 erneute Evaluation
 
-[Goals](https://pillek.github.io/team-eval/goals.html)
+[Goals](https://pillek.github.io/team-eval/goals.html){: .btn .btn-purple }

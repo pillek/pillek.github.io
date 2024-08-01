@@ -69,4 +69,4 @@ Visit the [Mermaid docs](https://mermaid.js.org/intro/) for a thorough descripti
 
 
 
-[Home](https://pillek.github.io/)
+[Home](https://pillek.github.io/){: .btn .btn-purple }

@@ -61,4 +61,4 @@ Contributions Dokumentation
 
 
 
-[UI Components](https://pillek.github.io/ui-components.html)
+[UI Components](https://pillek.github.io/ui-components.html){: .btn .btn-purple }

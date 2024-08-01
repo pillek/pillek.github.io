@@ -54,4 +54,5 @@ nav_order: 3
 
 
 
-[Contributions](https://pillek.github.io/team-eval/contributions.html)
+[Contributions](https://pillek.github.io/team-eval/contributions.html){: .btn .btn-purple }
+

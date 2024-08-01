@@ -77,4 +77,4 @@ Der Berater antwortet per Email, und die beiden klären alle weiteren Details.
 ### Advisor journey
 
 
-[Architecture](https://pillek.github.io/technical-docs/architecture.html)
+[Architecture](https://pillek.github.io/technical-docs/architecture.html){: .btn .btn-purple }

@@ -49,7 +49,7 @@ Die oben genannten Teammitglieder erklären an Eides statt:
 > Diese Arbeit wurde selbständig und eigenhändig erstellt. Die den benutzten Quellen wörtlich oder inhaltlich entommenen Stellen sind als solche kenntlich gemacht. Diese Erklärung gilt für jeglichen Inhalt und umfasst sowohl diese Dokumentation als auch den als Projektergebnis eingereichten Quellcode.
 
 
-[Value Proposition](https://pillek.github.io/value-proposition.html)
+[Value Proposition](https://pillek.github.io/value-proposition.html){: .btn .btn-purple }
 
 {: .fs-2 }
 Last build: {{ site.time | date: '%d %b %Y, %R%:z' }}

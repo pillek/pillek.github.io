@@ -25,5 +25,5 @@ nav_order: 2
 
 
 
-[Reference](https://pillek.github.io/technical-docs/reference.html)
+[Reference](https://pillek.github.io/technical-docs/reference.html){: .btn .btn-purple }
 

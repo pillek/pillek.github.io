@@ -90,4 +90,4 @@ Browser shows: `Database flushed and populated with some sample data.`
 
 
 
-[Design Desicions](https://pillek.github.io/design-decisions.html)
+[Design Desicions](https://pillek.github.io/design-decisions.html){: .btn .btn-purple }

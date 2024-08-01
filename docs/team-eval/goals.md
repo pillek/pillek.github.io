@@ -26,4 +26,4 @@ Die Herausforderung bestand darin ein Template für eine Homepage aufzubauen. Di
 </details>
 
 
-[Improvements](https://pillek.github.io/team-eval/improvements.html)
+[Improvements](https://pillek.github.io/team-eval/improvements.html){: .btn .btn-purple }

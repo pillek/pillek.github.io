@@ -48,4 +48,5 @@ nav_order: 1
 
 
 
-[Data Model](https://pillek.github.io/technical-docs/data-model.html)
+[Data Model](https://pillek.github.io/technical-docs/data-model.html){: .btn .btn-purple }
+
