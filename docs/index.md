@@ -8,7 +8,9 @@ nav_order: 0
 
 # Team Mustache 
 
-![Abbildung - Logo ](../assets/images/mustache_logo.jpg) [https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg]
+![Abbildung - Logo ](../assets/images/mustache_logo.jpg) 
+
+(https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg)
 
 Willkommen bei Team Mustache - Dies ist die Dokumentation für unser Onlineplattform!
 
@@ -23,7 +25,8 @@ Mit unserer Website wird Mode nicht nur zugänglicher für Sie, sondern auch per
 
 ### Philipp Tizian Kreis
 
->Meine Motivation : Ich bin Philipp und Student der Wirschaftsinformatik an der HWR Berlin. Meine Interessen spannen sich von Musik über Kochen, zu Handball und Schwimmen und enden bei vielen Studienthemen wie ...
+>Meine Motivation : Ich finde es spannend das theoretische Wissen aus anderen Vorlesungen wie z.B. Datenbank und Analytische Informationssysteme, in einem Projekt anwenden zu können.
+Außerdem ist es toll sich die Kompetenzen anzueignen um sich evtl. später selbst einmal selbstständig zu machen.
 
 Matrikel-Nr.
 : 77211868319
