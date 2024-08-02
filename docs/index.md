@@ -11,7 +11,7 @@ nav_order: 0
 
 *(https://img.freepik.com/premium-vector/long-mustache-face-with-sunglasses-logo-design_15473-2194.jpg)*
 
-Willkommen bei Team Mustache - Dies ist die Dokumentation für unser Onlineplattform!
+Willkommen bei Team Mustache - Dies ist die Dokumentation für unsere Onlineplattform!
 
 Unsere Plattform revolutioniert die Art und Weise, wie Sie sich kleiden, indem sie Sie mit erfahrenen Modeberatern aus der ganzen Welt verbindet. Bei uns haben Sie die Freiheit, aus einer Vielzahl von Beratern zu wählen, die Ihren spezifischen Bedürfnissen und Vorlieben entsprechen.
 
