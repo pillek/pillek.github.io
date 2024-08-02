@@ -45,16 +45,10 @@ Contributions Dokumentation
 ## Raslan Ebuheit
 
 ### Contributions
-: User Journey besteht aus:
-: Index.html
-: Chatbox - Funktionalität
-: Advisor.html
-: Singleadvisor.html
-: advisors.json
-: dashboard.html
-: payment.html
-: aboutus.html
-: app.py
+: Gesamte FE/BE
+: Modellierung des Datenmodells
+: Modellierung des User Flows
+: reference.md
 
 
 Contributions Dokumentation
