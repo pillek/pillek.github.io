@@ -15,6 +15,7 @@ Bei der Dokumenation habe ich mich an Just the Docs (https://just-the-docs.com/)
 
 ## Erklärung über die genutzten Quellen Raslan Ebuheit
 
-Das Frontend basiert auf Vorlage eines Videos, bei denen die einzelnen Elemente in abgewandelter Form übernommen worden sind (https://www.youtube.com/watch?v=P8YuWEkTeuE&list=PL9bD98LkBR7P8MYh0RzNSHgeVNTA8g0nB). Design - technische Elemente wurden unter der Hilfe von ChatGPT entsprechend angepasst.
+
+Das Frontend basiert auf Vorlage eines Videos, bei denen die einzelnen Elemente in abgewandelter Form übernommen worden sind (https://www.youtube.com/watch?v=P8YuWEkTeuE&list=PL9bD98LkBR7P8MYh0RzNSHgeVNTA8g0nB). Design - technische Elemente wurden unter der Hilfe von ChatGPT entsprechend angepasst, aber auch zur Integration der APIs.
 
 Aufgrund des Zeitmangels und weil die Advisor Journey zum Zeitpunkt der Fertigstellung komplett gefehlt hatte, wollte ich ein Gesamtbild der Datenbankanbindung abbilden und habe externe Hilfe seitens eines Freundes in Anspruch genommen, damit wir die notwendigen Prozesse abbilden können.
