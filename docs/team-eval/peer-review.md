@@ -5,9 +5,6 @@ nav_order: 3
 ---
 
 
-{: .label .label-red }
-[work in progress]
-
 {: .no_toc }
 # Peer review
 
