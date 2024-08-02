@@ -382,6 +382,42 @@ Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank un
 
 ---
 
+## 01: Login und Registrieren Prozesse in der Datenbank abbilden
+
+### Meta
+
+Status
+: Work in progress - **Decided** - Obsolete
+
+Updated
+: 28.07.2024
+
+### Problemstellung
+
+Ziel ist es, ein sicheres und benutzerfreundliches Anmelde- und Registrierungssystem für die Website eines Modeberaters zu implementieren. Dieses System muss:
+
+* Neuen Benutzern (Beratern) die Möglichkeit geben, sich mit eindeutigen Benutzernamen und E-Mail-Adressen zu registrieren.
+
+* einen Login-Mechanismus für registrierte Benutzer bereitstellen.
+
+* Benutzerinformationen in einer Datenbank speichern.
+
+### Entscheidung
+
+Die Entwurfsentscheidung war, ein Anmelde- und Registrierungssystem mit Flask-SQLAlchemy für die Datenbankverwaltung zu implementieren,
+
+Flask-Login für die Sitzungsverwaltung und Flask-WTF für die Formularverarbeitung.
+
+Diese Entscheidung wurde unter folgenden Faktoren getroffen:
+
+* Die Flexibilität von Flask und die Benutzerfreundlichkeit von Python.
+
+* SQLAlchemy's leistungsstarke ORM-Fähigkeiten für Datenbank-Interaktionen.
+
+* Flask-Login's eingebaute Funktionalität für die Verwaltung von Benutzersitzungen.
+
+---
+
 ## 01: Welche Informationen können in dem Beraterprofil angegeben werden?
 
 ### Meta
