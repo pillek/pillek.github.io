@@ -43,57 +43,6 @@ Updated
 
 ---
 
-## [Example, delete this section] 01: How to access the database - SQL or SQLAlchemy 
-
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 30-Jun-2024
-
-### Problem statement
-
-Should we perform database CRUD (create, read, update, delete) operations by writing plain SQL or by using SQLAlchemy as object-relational mapper?
-
-Our web application is written in Python with Flask and connects to an SQLite database. To complete the current project, this setup is sufficient.
-
-We intend to scale up the application later on, since we see substantial business value in it.
-
-
-
-Therefore, we will likely:
-Therefore, we will likely:
-Therefore, we will likely:
-
-+ Change the database schema multiple times along the way, and
-+ Switch to a more capable database system at some point.
-
-### Decision
-
-We stick with plain SQL.
-
-Our team still has to come to grips with various technologies new to us, like Python and CSS. Adding another element to our stack will slow us down at the moment.
-
-Also, it is likely we will completely re-write the app after MVP validation. This will create the opportunity to revise tech choices in roughly 4-6 months from now.
-*Decision was taken by:* github.com/joe, github.com/jane, github.com/maxi
-
-### Regarded options
-
-We regarded two alternative options:
-
-+ Plain SQL
-+ SQLAlchemy
-
-| Criterion | Plain SQL | SQLAlchemy |
-| --- | --- | --- |
-| **Know-how** | ✔️ We know how to write SQL | ❌ We must learn ORM concept & SQLAlchemy |
-| **Change DB schema** | ❌ SQL scattered across code | ❔ Good: classes, bad: need Alembic on top |
-| **Switch DB engine** | ❌ Different SQL dialect | ✔️ Abstracts away DB engine |
-
----
-
 ## 01: Wie soll der User Journey sein, bzw. was bräuchten wir minimal?
 
 ### Meta
@@ -252,7 +201,9 @@ Wir bauen eine SQLAlchemy Datenbank mit den Tabellen: User, Login,...
 
 ### Regarded options
 
-[Describe any possible design decision that will solve the problem. Assess these options, e.g., via a simple pro/con list.]
+SQLAlchemy kennen wir durch den Kurs.
+
+Firebase scheint intuitiver zu sein.
 
 ---
 
@@ -261,7 +212,7 @@ Wir bauen eine SQLAlchemy Datenbank mit den Tabellen: User, Login,...
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: Work in progress - **Decided** - Obsolete
 
 Updated
 : 09-07-2024
@@ -287,7 +238,7 @@ B. Python: Wird ein Standard Code verwendet um eine POST Anfrage an die hinterle
 Zum jetzigen Stand der Entwicklung ist nur eine Email - Adresse für alle Berater verwendet. Das nächste Schritte wäre eventuell für jeden Berater eine individuelle POST - Anfrage zu machen. Je nach Stand der Entwicklung wird es versucht umzusetzen. 
 
 ---
-## 02: Wie die Probleme bei der Mail lösen? 
+## 07: Wie die Probleme bei der Mail lösen? 
 
 ### Meta
 
@@ -309,7 +260,7 @@ Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär ke
 
 --
 
-## 02: Wie gestalten wir den Bezahlungsvorgang?
+## 08: Wie gestalten wir den Bezahlungsvorgang?
 
 ### Meta
 
@@ -358,7 +309,7 @@ Weniger geführte Erfahrung, was zu höheren Abbruchraten führen kann.
 ---
 
 
-## 01: Änderung Aufgabenverteilung eine Woche vor Ende
+## 09: Änderung Aufgabenverteilung eine Woche vor Ende
 
 ### Meta
 
@@ -370,10 +321,10 @@ Updated
 
 ### Problem statement
 
-Eine Woche vor dem Abgabetermin des Projekts kam Philipp wegen eines Fehlercodes in der Datenbank und der allgemeinen Logik des Projekts, die er bis dahin entwickelt hatte, nicht weiter. Deswegen entschied er sich vollständige Neugestaltung der Datenbank in einem separaten Testprojekt, was zu einer erheblichen Verzögerung eine Woche vor Abgabe führte.
+Eine Woche vor dem Abgabetermin des Projekts kam Philipp wegen eines Fehlercodes in der Datenbank und der allgemeinen Logik des Projekts, die er bis dahin entwickelt hatte, nicht weiter. Deswegen entschied er sich vollständige Neugestaltung der Datenbank in einem separaten Testprojekt, was einererhebliche Verzögerung eine Woche vor Abgabe bedeutete.
 ### Decision
 
-Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank und die Logik des Projekts von Philipp auf Raslan zu übertragen. Während Philipp Raslan dabei hilft die Datenbank zu programmieren, kümmert sich Philipp eher  um die Dokumentation. Wir hoffen dadurch das Projekt trotz der unerwarteten Herausforderungen rechtzeitig abzuschließen.
+Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank und die Logik des Projekts von Philipp auf Raslan zu übertragen. Während Philipp Raslan dabei hilft die Datenbank zu programmieren, kümmert sich Philipp eher um die Dokumentation. 
 
 ### Regarded options
 
@@ -382,7 +333,7 @@ Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank un
 
 ---
 
-## 01: Login und Registrieren Prozesse in der Datenbank abbilden
+## 10: Login und Registrieren Prozesse in der Datenbank abbilden
 
 ### Meta
 
@@ -466,7 +417,20 @@ Status
 : Work in progress - **Decided** - Obsolete
 
 Updated
-: 27.07.2024
+: 20.05.2024
+
+### Problem statement
+Wir müssen eine API in unsere Plattform einbauen.
+
+### Decision
+Wir haben beschlossen, die PayPal API zu verwenden, um gleichzeitig die Zahlungsfunktion und die API in unsere Plattform zu integrieren.
+
+### Regarded options
+Option 1: PayPal API ist eine einfache Integration und hat eine umfangreiche Dokumentation.
+
+Option 2: Stripe API scheint flexibel zu sein, unterstützt viele Zahlungsmethoden und hat eine gute Dokumentation.
+
+Option 3: Wetter-API passt eigentlich nicht, wäre nur für den Notfall.
 
 ## 01: Uns ist die Idee einer ChatBox gekommen, ist es einfach so etwas einzubauen oder nicht?
 
@@ -486,16 +450,18 @@ Status
 : Work in progress - **Decided** - Obsolete
 
 Updated
-: 27.07.2024
+: 14.06.2024
 
-## 01:  Aufgrund von komplett verschiedenen Arbeitsalltagen ist die Kommunikation von uns langsam und man versteht sich teilweise falsch. Was ändern wir?
+### Problem statement
+Raslan kann Flask nicht verwenden und deswegen können wir nicht effektiv zusammenzuarbeiten.
 
-### Meta
+### Decision
+Wir haben beschlossen, dass Raslan auf einem lokalen Projekt arbeitet und eine Hälfte des Projekts bearbeitet.
 
-Status
-: Work in progress - **Decided** - Obsolete
+### Regarded options
+Option 1: Raslan verwendet einen anderen Computer.
 
-Updated
-: 27.07.2024
+Option 2: Arbeitsteilung in der Hälfte, wir arbeiten an verschiedenen Teilen des Projekts und Philipp kümmert sich um die Flask Installation und das Hauptprojekt auf GitHub. 
+
 
 [User Evaluation](https://pillek.github.io/user-eval.html){: .btn .btn-purple }

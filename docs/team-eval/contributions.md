@@ -26,33 +26,32 @@ Contributions Web-App
 : dashboard.html
 : registration.html
 : (Datenbankimplementierung bis Raslan sie übernahm [Design Decision](https://pillek.github.io/design-decisions html#01-%C3%A4nderung-aufgabenverteilung-eine-woche-vor-ende))
+: readme.md
 
 Contributions Dokumentation
-:index.md
-:value-proposition.md
-:architecture.md
-:data-model.md
-:reference.md
-:design-decisions.md
-:user-evaluation.md
-:goals
-:improvements.md
-:peer-review.md
-:contributions.md
-:ui-components.md
+: index.md
+: value-proposition.md
+: architecture.md
+: data-model.md
+: design-decisions.md
+: user-evaluation.md
+: goals.md
+: improvements.md
+: peer-review.md
+: contributions.md
+: ui-components.md
 
 
 ## Raslan Ebuheit
 
 ### Contributions
 : Gesamte FE/BE
-: Modellierung des Datenmodells
-: Modellierung des User Flows
-: reference.md
 
 
 Contributions Dokumentation
-
+: reference.md
+: Data Model
+: User Flow
 
 
 [UI Components](https://pillek.github.io/ui-components.html){: .btn .btn-purple }
