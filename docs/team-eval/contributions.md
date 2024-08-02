@@ -25,6 +25,9 @@ Contributions Web-App
 : registration.html
 : (Eine komplette Datenbankimplementierung bis Raslan sie übernahm [Design Decision](https://pillek.github.io/design-decisions html#01-%C3%A4nderung-aufgabenverteilung-eine-woche-vor-ende))
 : readme.md
+: sql Ordner
+
+
 
 Contributions Dokumentation
 : index.md

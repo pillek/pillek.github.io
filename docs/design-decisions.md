@@ -3,11 +3,7 @@ title: Design Decisions
 nav_order: 3
 ---
 
-{: .label }
-[Philipp Kreis/Raslan Ebuheit]
 
-{: .label .label-red }
-[work in progress]
 
 {: .no_toc }
 # Design decisions
@@ -163,7 +159,7 @@ Con: Weniger Vorwissen.
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: Work in progress - **Decided** - Obsolete
 
 Updated
 : 09-07-2024

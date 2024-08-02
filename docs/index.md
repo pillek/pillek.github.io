@@ -3,8 +3,7 @@ title: Home
 nav_order: 0
 ---
 
-{: .label .label-red }
-[work in progress]
+
 
 # Team Mustache
 ![Abbildung - Logo ](../assets/images/mustache_logo.jpg) 
