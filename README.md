@@ -1,5 +1,5 @@
 # Web-App
-Wir erstellen eine Web-App mit Flask
+Wir erstellen eine Web-App mit Flask.
 
 Um die Web-App nutzen zu können, befolge die nächsten Schritte.
 
@@ -33,13 +33,13 @@ macOS:
 
 ## Schritt 3
 
-Installiere die erforderlichem python packages.
+Installiere die erforderlichen python packages.
 
     pip install -r requirements.txt
 
 ## Schritt 4
 
-Im Terminal:
+Im Terminal eingeben:
 
     flask run
 
