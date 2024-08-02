@@ -38,6 +38,10 @@ def index():
 def singleadvisor():
     return render_template('singleadvisor.html')
 
+@app.route('/about')
+def aboutus():
+    return render_template('aboutus.html')
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:

@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advisor Detailseite</title>
-    <link rel="stylesheet" href="static/css/singleadvisor.css">
-</head>
-<body>
-    <div class="header">
-        <nav class="nav-center">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/login">Register</a></li>
-            </ul>
-        </nav>
-    </div>
+{% extends "base.html" %}
+{% block content %}
 
     <div class="main-content">
         <div class="advisor-image">
@@ -173,5 +156,4 @@
 
         document.addEventListener('DOMContentLoaded', getAdvisorDetails);
     </script>
-</body>
-</html>
+{% endblock %}
