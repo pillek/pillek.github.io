@@ -369,47 +369,7 @@ Diese Entscheidung wurde unter folgenden Faktoren getroffen:
 
 ---
 
-## 01: Welche Informationen können in dem Beraterprofil angegeben werden?
-
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 27.07.2024
-
-## 01: Gibt der Berater direkt bei der Registrierung alle Informationen über sich ab?
-
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 27.07.2024
-
-## 01: Können wir in die Auswahl der Berater eine Filter-/Suchfunktion einbauen, damit sich Kunden besser zurecht finden?
-
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 27.07.2024
-
-## 01: Gibt der Berater direkt bei der Registrierung alle Informationen über sich ab?
-
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 27.07.2024
-
-## 01: Welche Möglichkeiten gibt es eine API in unsere Plattform einzubauen?
+## 11: Welche Möglichkeiten gibt es eine API in unsere Plattform einzubauen?
 
 ### Meta
 
@@ -432,17 +392,8 @@ Option 2: Stripe API scheint flexibel zu sein, unterstützt viele Zahlungsmethod
 
 Option 3: Wetter-API passt eigentlich nicht, wäre nur für den Notfall.
 
-## 01: Uns ist die Idee einer ChatBox gekommen, ist es einfach so etwas einzubauen oder nicht?
 
-### Meta
-
-Status
-: Work in progress - **Decided** - Obsolete
-
-Updated
-: 27.07.2024
-
-## 01: Bei Raslan funktioniert Flask nicht, wegen einem zu alten Laptop, wie können wir trotzdem zu zweit programmieren.
+## 12: Bei Raslan funktioniert Flask nicht, wegen einem zu alten Laptop, wie können wir trotzdem zu zweit programmieren.
 
 ### Meta
 
