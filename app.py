@@ -87,11 +87,6 @@ def overview():
 @app.route("/dashboard")
 @login_required
 def dashboard():
-    # if request.method == 'POST':
-    #     name = request.form.get('name')
-    #     preferences = request.form.get('preferences')
-    #     biography = request.form.get('biography')
-    #     return 'Erfolgreich abgesendet!'
     return render_template('dashboard.html', title='Dashboard')
 
 @app.route('/home',methods=['GET', 'POST'])
@@ -143,7 +138,6 @@ def process_payment():
     print(f"Expiry Date: {data['payment']['expiryDate']}")
     print(f"CVV: {data['payment']['cvv']}")
 
-    # Here you would typically process the payment with a payment gateway
 
     return jsonify({"message": "Payment processed successfully"}), 200
 
