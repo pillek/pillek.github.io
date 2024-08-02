@@ -11,21 +11,38 @@ Klone das Repository
 
 Richte ein Python Virtual Environment ein und aktiviere es.
 
-1. 
-2. 
-3. 
+1. Im Terminal eingeben:
+
+    Windows: python -m venv venv
+    macOS: python3 -m venv venv
+2. Im Terminal eingeben:
+Windows:
+    Mit der  Eingabeaufforderung:
+
+        .\venv\Scripts\activate.bat
+
+    Mit der PowerShell:
+
+        .\venv\Scripts\Activate.ps1
+
+macOS:
+        
+    source venv/bin/activate
+   
+3.
 
 ## Schritt 3
 
 Installiere die erforderlichem python packages.
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Schritt 4
 
-flask run
+Im Terminal:
+
+    flask run
+
 
 ## Schritt 5:
-Besuchen Sie http://127.0.0.1:5000/insert/sample, um die Datenbank der App mit einigen Beispieldaten zu füllen.
-
-## Schritt 6: Besuchen Sie http://127.0.0.1:5000/, um die Landing Page anzuzeigen.
+Besuche http://127.0.0.1:5000/, um die Jomepage anzuzeigen.
