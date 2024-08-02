@@ -22,20 +22,15 @@ nav_order: 3
 
 ### My observation (Wahrnehmung)
 
-[A specific observation, regarding know-how, effectiveness, team work or from another relevant area]
-
 - Kommunikation war langsam
 - gute, schnelle Arbeitsweise
 
 ### Effect on me (Wirkung)
 
-[What positive or negative effect did this observation have on the reviewer?]
-
 - demotivierend, da man größeren Aufwand brauchte um voran zu kommen
 - motivierend gewirkt, da man sich darauf verlassen konnte
 ### Tip for the future (Wunsch)
 
-[What should be changed or strengthened for the point of view of the reviewer?]
 - schneller kommunizieren, evtl. nicht so einen anspruchsvollen Kurs neben einem Vollzeitpraktikum machen
 
 ## [Raslan Ebuheit] - Review 
