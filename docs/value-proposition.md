@@ -3,11 +3,6 @@ title: Value Proposition
 nav_order: 1
 ---
 
-{: .label }
-[Philipp Kreis]
-
-{: .label .label-red }
-[work in progress]
 
 {: .no_toc }
 # Value proposition
@@ -74,7 +69,6 @@ Der Kunde kann sich das Profil eines Beraters im Detail ansehen, um mehr über d
 
 Der Berater antwortet per Email, und die beiden klären alle weiteren Details.
 
-### Advisor journey
 
 
 [Architecture](https://pillek.github.io/technical-docs/architecture.html){: .btn .btn-purple }

@@ -19,29 +19,6 @@ nav_order: 3
 {: toc }
 </details>
 
-## 01: [Title]
-
-### Meta
-
-Status
-: **Work in progress** - Decided - Obsolete
-
-Updated
-: DD-MMM-YYYY
-
-### Problem statement
-
-[Describe the problem to be solved or the goal to be achieved. Include relevant context information.]
-
-### Decision
-
-[Describe **which** design decision was taken for **what reason** and by **whom**.]
-
-### Regarded options
-
-[Describe any possible design decision that will solve the problem. Assess these options, e.g., via a simple pro/con list.]
-
----
 
 ## 01: Wie soll der User Journey sein, bzw. was bräuchten wir minimal?
 
@@ -258,7 +235,7 @@ Die hinterlegte Email -Adresse von tippitopp034@gmail.com ist ein Google Provide
 
 Wichtig war dabei, dass die verwendete API primär funktioniert und sekundär keine zusätzlichen Kosten verursacht. Da das Basisprodukt von Mailjet 6000 Mails pro Monat kostenlos verarbeiten kann, fiel die entsprechende Entscheidung auf den besagten Provider.
 
---
+---
 
 ## 08: Wie gestalten wir den Bezahlungsvorgang?
 
@@ -321,7 +298,8 @@ Updated
 
 ### Problem statement
 
-Eine Woche vor dem Abgabetermin des Projekts kam Philipp wegen eines Fehlercodes in der Datenbank und der allgemeinen Logik des Projekts, die er bis dahin entwickelt hatte, nicht weiter. Deswegen entschied er sich vollständige Neugestaltung der Datenbank in einem separaten Testprojekt, was einererhebliche Verzögerung eine Woche vor Abgabe bedeutete.
+Eine Woche vor dem Abgabetermin des Projekts kam Philipp wegen eines Fehlercodes in der Datenbank und der allgemeinen Logik des Projekts, die er bis dahin entwickelt hatte, nicht weiter. Deswegen entschied er sich vollständige Neugestaltung der Datenbank in einem separaten Testprojekt, was eine erhebliche Verzögerung eine Woche vor Abgabe bedeutete. Die Datenbank im Testprojekt funktioniert und der Login und die Registrierung von Beratern ist möglich.
+
 ### Decision
 
 Wir haben uns dann entschieden, die primäre Verantwortung für die Datenbank und die Logik des Projekts von Philipp auf Raslan zu übertragen. Während Philipp Raslan dabei hilft die Datenbank zu programmieren, kümmert sich Philipp eher um die Dokumentation. 
@@ -415,4 +393,4 @@ Option 1: Raslan verwendet einen anderen Computer.
 Option 2: Arbeitsteilung in der Hälfte, wir arbeiten an verschiedenen Teilen des Projekts und Philipp kümmert sich um die Flask Installation und das Hauptprojekt auf GitHub. 
 
 
-[User Evaluation](https://pillek.github.io/user-eval.html){: .btn .btn-purple }
+[Goals](https://pillek.github.io/team-eval/goals.html){: .btn .btn-purple }

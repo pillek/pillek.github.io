@@ -5,8 +5,6 @@ nav_order: 4
 ---
 
 
-{: .label .label-red }
-[work in progress]
 
 {: .no_toc }
 # Summary of individual contributions
@@ -21,25 +19,22 @@ nav_order: 4
 ## Philipp Kreis
 
 Contributions Web-App
-: Login.html
-: app.py
+: Login.html (nur das Formular was bis zur Präsentation bestand, keine Datenbankanbindung)
+: app.py (Grundgerüst, ansonsten nur /index, /singleadvisor, /logout, /dashboard, /overview)
 : dashboard.html
 : registration.html
-: (Datenbankimplementierung bis Raslan sie übernahm [Design Decision](https://pillek.github.io/design-decisions html#01-%C3%A4nderung-aufgabenverteilung-eine-woche-vor-ende))
+: (Eine komplette Datenbankimplementierung bis Raslan sie übernahm [Design Decision](https://pillek.github.io/design-decisions html#01-%C3%A4nderung-aufgabenverteilung-eine-woche-vor-ende))
 : readme.md
 
 Contributions Dokumentation
 : index.md
 : value-proposition.md
 : architecture.md
-: data-model.md
 : design-decisions.md
-: user-evaluation.md
 : goals.md
 : improvements.md
 : peer-review.md
 : contributions.md
-: ui-components.md
 
 
 ## Raslan Ebuheit

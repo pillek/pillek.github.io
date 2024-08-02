@@ -4,11 +4,7 @@ parent: Technical Docs
 nav_order: 2
 ---
 
-{: .label }
-[Raslan Ebuheit]
 
-{: .label .label-red }
-[work in progress]
 
 {: .no_toc }
 # Data model
